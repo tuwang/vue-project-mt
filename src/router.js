@@ -8,6 +8,10 @@ export default new VueRouter({
     {
       path: '/home',
       component: () => import('./views/Home.vue')
-    }
+    },
+    // {
+    //   path: '/city',
+    //   component: () => import('./views/City.vue')
+    // }
   ]
 })
