@@ -8,6 +8,18 @@ export default new VueRouter({
     {
       path: '/home',
       component: () => import('./views/Home.vue')
+    },
+    {
+      path: '/center',
+      component: () => import('./views/Center.vue')
+    },
+    {
+      path: '/search',
+      component: () => import('./views/Search.vue')
+    },
+    {
+      path: '*',
+      redirect: '/home'
     }
   ]
 })
