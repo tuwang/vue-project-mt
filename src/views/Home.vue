@@ -7,13 +7,13 @@
           <i class="iconfont icon-arrow-down"></i>
         </a>
       </div>
-      <div class="search">
-        <input type="text" placeholder="输入商家/品类/商圈">
-      </div>
+      <router-link :to="{ name:'search' }" class="search">
+        <i class="iconfont icon-sousuo"></i>
+        输入商家/品类/商圈
+      </router-link>
       <div class="my">
         <a>
           <i class="iconfont icon-wode"></i>
-          <span>我的</span>
         </a>
       </div>
     </div>
@@ -30,30 +30,32 @@
     <div class="list">
       <dl>
         <dt>猜你喜欢</dt>
-        <dd>
-          <a href="#">
+        <dd 
+          v-for="item in stortList"
+          :key="item.id">
+          <router-link :to="{ name:'detail', params: { id: item.id } }">
             <div class="deal">
               <div class="deal_left">
                 <img
-                  src="http://p1.meituan.net/200.0/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg@69_0_564_564a%7C267h_267w_2e_90Q"
+                  :src=item.imgUrl
                   alt
                 >
               </div>
               <div class="deal_rigth">
-                <div class="name">正新鸡排</div>
-                <div class="describe">[3店通用]正新鸡排一份</div>
+                <div class="name">{{ item.name }}</div>
+                <div class="describe">{{ item.type }}</div>
                 <div class="price">
                   <div class="p_left">
-                    <span>8.9元</span>
-                    <span>门市价:15元</span>
+                    <span>{{ item.price }}元</span>
+                    <span>门市价:{{ item.originalPrice }}</span>
                   </div>
                   <div class="p_right">
-                    <span>已售137116</span>
+                    <span>{{ item.sold }}</span>
                   </div>
                 </div>
               </div>
             </div>
-          </a>
+          </router-link>
         </dd>
         <dd class="dd">
           <a href="#">
@@ -68,6 +70,8 @@
 </template>
 <script>
 import FooterBar from '../components/FooterBar.vue'
+import Axios from 'axios'
+import { mapMutations, mapState, mapGetters, mapActions } from 'vuex';
 export default {
   name: 'app',
   data() {
@@ -123,11 +127,26 @@ export default {
           color: "#599eec",
           icon: "icon-huoche"
         }
-      ]
+      ],
+      stortList: []
     };
+  },
+  methods: {
+    getStortList() {
+      Axios.get('/json/imgUrl.json')
+        .then(res => {
+          let data = res.data
+          // console.log(data)
+          this.stortList = data
+          // console.log(this.stortList)
+        })
+    }
   },
   components: {
     FooterBar
+  },
+  created() {
+    this.getStortList()
   }
 };
 </script>
@@ -155,21 +174,18 @@ export default {
     }
   }
   .search {
-    width: 517px;
+    width: 500px;
     height: 64px;
     float: left;
+    line-height: 64px;
     border-radius: 4px;
+    font-size: 24px;
     margin-top: 20px;
-    input {
-      border: 0;
-      width: 517px;
-      height: 64px;
-      font-size: 24px;
-      padding-left: 17px;
-      line-height: 64px;
-      background: rgba(0, 0, 0, 0.15);
-    }
-    ::-webkit-input-placeholder {
+    padding-left: 17px;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.15);
+    i {
+      font-size: 28px;
       color: #fff;
     }
   }
@@ -187,9 +203,6 @@ export default {
       color: #fff;
       i {
         font-size: 50px;
-        height: 50px;
-        margin-top: 20px;
-        line-height: 50px;
         display: block;
         color: #fff;
       }
@@ -282,7 +295,7 @@ export default {
               font-size: 24px;
             }
             .price {
-              margin-top: 44px;
+              margin-top: 52px;
               line-height: 19px;
               .p_left {
                 float: left;
