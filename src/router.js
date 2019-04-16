@@ -7,7 +7,16 @@ export default new VueRouter({
   routes: [
     {
       path: '/home',
-      component: () => import('./views/Home.vue')
+      component: () => import('./views/Home.vue'),
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: () => import('./views/Detail.vue')
+    },
+    {
+      path: '*',
+      component: () => import('./views/Home.vue'),
     }
   ]
 })

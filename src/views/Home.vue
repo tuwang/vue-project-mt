@@ -20,7 +20,7 @@
     <div class="nav">
       <ul>
         <li v-for="(item,index) in navList" :key="index">
-          <router-link to="item.href">
+          <router-link :to= item.href>
             <i :class="[ 'iconfont', item.icon ]" :style="{ color:item.color }"></i>
             <span>{{ item.name }}</span>
           </router-link>
