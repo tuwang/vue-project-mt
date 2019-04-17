@@ -7,10 +7,7 @@ export default new VueRouter({
   routes: [
     {
       path: '/home',
-      component: () => import('./views/Home.vue')
-      /* children: [
-        { path: 'search', name: 'search', component: () => import('./views/Search.vue') }
-      ] */
+      component: () => import('./views/Home.vue'),
     },
     {
       path: '/center',
@@ -20,10 +17,6 @@ export default new VueRouter({
       path: '/search',
       name: 'search',
       component: () => import('./views/Search.vue')
-    },
-    { path: '/detail/:id',
-      name:'detail', 
-      component: () => import('./views/Detail.vue') 
     },
     {
       path: '/cinema',
@@ -36,6 +29,13 @@ export default new VueRouter({
       ]
     },
     { path:'/city', name:'city', component: () => import('./views/City.vue') },
+    {
+      path: '/detail', component: () => import('./views/Details.vue')
+    },
+    {
+      path: '/login',
+      component: () => import('./views/login.vue')
+    },
     {
       path: '*',
       redirect: '/home'

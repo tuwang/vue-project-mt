@@ -1,22 +1,22 @@
 <template>
   <header class="navbar">
     <div class="nav-wrap-left">
-        <a class="back">
-          <i class="text-icon"></i>
-        </a>
+      <a href="" class="back">
+        <i class="text-icon"></i>
+      </a>
     </div>
-    <div class="nav-header">{{tabs.title}}</div>
+    <div class="nav-header">团购详情</div>
     <div class="nav-wrap-right">
       <a href="">
         <span class="nav-btn">
-          <i :class="['text-icon','icon-sp',tabs.icon1]"></i>
-          {{tabs.name1}}
+          <i class="text-icon icon-sp icon-collect"></i>
+          收藏
         </span>
       </a>
       <a href="">
         <span class="nav-btn">
-          <i :class="['text-icon','icon-sp',tabs.icon2]"></i>
-          {{tabs.name2}}
+          <i class="text-icon icon-sp icon-menu"></i>
+          导航
         </span>
       </a>
     </div>
@@ -25,19 +25,10 @@
 
 <script>
 export default {
-  props: {
-    tabs: {
-      type: Object
-    }
-  },
-  methods: {
-    back () {
-      this.$router.go(-1); // 返回上一页
-    }
-  },
+  
 }
-
 </script>
+
 <style lang="less">
 @import '../styles/common/reset.less';
 @import '../styles/common/common.less';
@@ -130,20 +121,6 @@ export default {
         .icon-menu{
           background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
           background-position: -44px -44px;
-          width: 40px;
-          height: 40px;
-        }
-
-        .icon-homee{
-          background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-          background-position: -34px -84px;
-          width: 40px;
-          height: 40px;
-        }
-
-        .icon-search{
-          background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-          background-position: 0 -44px;
           width: 40px;
           height: 40px;
         }
