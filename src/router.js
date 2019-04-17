@@ -12,6 +12,12 @@ export default new VueRouter({
         { path: 'search', name: 'search', component: () => import('./views/Search.vue') }
       ] */
     },
+<<<<<<< HEAD
+    // {
+    //   path: '/city',
+    //   component: () => import('./views/City.vue')
+    // }
+=======
     {
       path: '/center',
       component: () => import('./views/Center.vue')
@@ -28,5 +34,6 @@ export default new VueRouter({
       path: '*',
       redirect: '/home'
     }
+>>>>>>> b600a2a2b3857be46ebc05af002e5b7e6ebf357b
   ]
 })
