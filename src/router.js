@@ -22,6 +22,10 @@ export default new VueRouter({
       path: '/detail', component: () => import('./views/Details.vue')
     },
     {
+      path: '/login',
+      component: () => import('./views/login.vue')
+    },
+    {
       path: '*',
       redirect: '/home'
     }
