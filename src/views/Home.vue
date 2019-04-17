@@ -2,10 +2,10 @@
   <div>
     <div class="header">
       <div class="address">
-        <a>
+        <router-link :to="{ name:'city' }">
           深圳
           <i class="iconfont icon-arrow-down"></i>
-        </a>
+        </router-link>
       </div>
       <router-link :to="{ name:'search' }" class="search">
         <i class="iconfont icon-sousuo"></i>
@@ -94,7 +94,7 @@ export default {
         },
         {
           name: "猫眼电影",
-          href: "/dianyin",
+          href: "cinema",
           color: "#ff6767",
           icon: "icon-icon_-maoyandianying"
         },
@@ -338,6 +338,7 @@ export default {
                 }
               }
               .p_right {
+                font-size: 24px;
                 float: right;
               }
             }

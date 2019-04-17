@@ -12,12 +12,6 @@ export default new VueRouter({
         { path: 'search', name: 'search', component: () => import('./views/Search.vue') }
       ] */
     },
-<<<<<<< HEAD
-    // {
-    //   path: '/city',
-    //   component: () => import('./views/City.vue')
-    // }
-=======
     {
       path: '/center',
       component: () => import('./views/Center.vue')
@@ -29,11 +23,22 @@ export default new VueRouter({
     },
     { path: '/detail/:id',
       name:'detail', 
-      component: () => import('./views/Detail.vue') },
+      component: () => import('./views/Detail.vue') 
+    },
+    {
+      path: '/cinema',
+      name: 'cinema',
+      redirect: '/cinema/nowPlaying',
+      component: () => import('./views/Cinema.vue'),
+      children: [
+        { path: 'nowPlaying', component: () => import('./components/FileNowPlaying.vue') },
+        { path:'comingSoon', component: () => import('./components/FileComingSoon.vue') }
+      ]
+    },
+    { path:'/city', name:'city', component: () => import('./views/City.vue') },
     {
       path: '*',
       redirect: '/home'
     }
->>>>>>> b600a2a2b3857be46ebc05af002e5b7e6ebf357b
   ]
 })

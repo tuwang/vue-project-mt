@@ -9,6 +9,7 @@ const store = new Vuex.Store({
 
   },
   modules: {
+    //暴露的仓库
     seller: seller
   }
 })

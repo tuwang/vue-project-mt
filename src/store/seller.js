@@ -60,7 +60,7 @@ export default {
         }).then(res => {
           var data = res.data
           // 前端处理分页
-          commit('changeTotalSize', data.legth)
+          commit('changeTotalSize', data.length)
           commit('changeList', data.splice((state.pageNum - 1) * state.pageSize, state.pageSize))
           // 数据加载以后 需要设置 this.loading = false
           commit('changeLoading', false)

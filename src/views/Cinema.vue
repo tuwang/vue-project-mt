@@ -1,0 +1,161 @@
+<template>
+  <div>
+    <div class="film-list">
+      <div class="tabs-bar-wrapper">
+        <div class="tabs-bar">
+          <ul class="tabs-nav">
+            <li
+              style="width: 50%;"
+              v-for="item in filmTypes"
+              :key="item.id"
+              :class="{ active: curType === item.id }"
+              @click="changeType(item)"
+            >
+              <span>{{ item.name }}</span>
+            </li>
+            <div class="tab-ink-bar-wrapper" :style="tabInkBarStyle">
+              <span class="tab-ink-bar" style="width: 56px;"></span>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <router-view></router-view>
+      
+    </div>
+    <CnavBar :tabs="tabs"></CnavBar>
+  </div>
+</template>
+
+<script>
+import CnavBar from '../components/CnavBar.vue';
+export default {
+  data () {
+    return {
+      filmTypes: [
+        { id: 'nowPlaying', name: '正在热映', href: '/cinema/nowPlaying' },
+        { id: 'comingSoon', name: '即将上映', href: '/cinema/comingSoon' }
+      ],
+      curType: this.$route.path.substring(8),
+      tabs:[
+        { name: '电影', href: '/cinema', icon:'icon-films' },
+        { name: '影院' , href: '/cinemas', icon:'icon-cinemas' },
+        { name: '我的' , href: '/center', icon:'icon-center' },
+      ]
+    }
+  },
+  computed: {
+    tabInkBarStyle () {
+      let obj = {
+        transform: 'translate3d(0%, 0px, 0px)',
+        width: '50%'
+      }
+      if (this.curType === 'comingSoon') {
+        obj.transform = 'translate3d(100%, 0px, 0px)'
+      }
+      return obj
+    }
+  },
+
+  methods: {
+    changeType (item) {
+      this.curType = item.id
+      this.$router.push(item.href)
+    },
+  },
+  components: {
+    CnavBar
+  }
+}
+</script>
+
+<style lang="less">
+@import '../styles/common/mixins.less';
+
+.film-list {
+  padding-bottom: 100px;
+  .city-fixed {
+    position: absolute;
+    top: 36px;
+    left: 14px;
+    color: #fff;
+    z-index: 10;
+    font-size: 26px;
+    background: rgba(0,0,0,.2);
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0 10px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+.tabs-bar-wrapper {
+  position: relative;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  overflow-x: hidden;
+  background: #fff;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
+
+  .tabs-bar {
+    .border-1-bottom;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    transition: transform .2s cubic-bezier(.35,0,.25,1);
+    position: relative;
+
+    .tabs-nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      width: 100%;
+
+      li {
+        flex-shrink: 0;
+        color: #191a1b;
+        text-align: center;
+        height: 32px;
+        line-height: 32px;
+        font-size: 28px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+        &.active {
+          color: #ff5f16;
+        }
+      }
+
+      .tab-ink-bar-wrapper {
+        position: absolute;
+        margin: auto;
+        top: 60px;
+        left: 0;
+        transform: translateZ(0);
+        transition: transform .2s cubic-bezier(.35,0,.25,1);
+
+        .tab-ink-bar {
+          border-bottom: 4px solid #ff5f16;
+          border-radius: 40px;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+</style>
