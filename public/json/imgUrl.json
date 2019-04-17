@@ -6,7 +6,17 @@
     "price": "49.9",
     "originalPrice":"58元",
     "sold": "已售126241",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/cfe15389663f0c1d45cd0dc3397eb762130703.jpg"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/cfe15389663f0c1d45cd0dc3397eb762130703.jpg",
+    "goods": [
+      {
+        "goodId": 100,
+        "name": "汉釜宫韩式自助烤肉火锅",
+        "price": "49.9",
+        "originalPrice":"58元",
+        "sold": "已售126241",
+        "imgUrl": "http://p0.meituan.net/deal/459a3442830ca3b65d4c23e6a92f0c44344843.jpg"
+      }
+    ]
   },
   {
     "id": "02",
@@ -15,7 +25,17 @@
     "price": "8.9",
     "originalPrice":"15元",
     "sold": "已售137065",
-    "imgUrl":"http://p1.meituan.net/200.0/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg@69_0_564_564a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p1.meituan.net/200.0/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg@69_0_564_564a%7C267h_267w_2e_90Q",
+    "goods": [
+      {
+        "goodsId": 101,
+        "name": "正新鸡排",
+        "price": "8.9",
+        "originalPrice":"15元",
+        "sold": "已售137065",
+        "imgUrl": "http://p1.meituan.net/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg"
+      }
+    ]
   },
   {
     "id": "03",
@@ -24,7 +44,17 @@
     "price": "163",
     "originalPrice":"178元",
     "sold": "已售42134",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/d5e142c3dcca778edcad372f638212ef584033.jpg@698_0_1802_1802a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/d5e142c3dcca778edcad372f638212ef584033.jpg@698_0_1802_1802a%7C267h_267w_2e_90Q",
+    "goods": [
+      {
+        "goodsId": 102,
+        "name": "四海一家",
+        "price": "163",
+        "originalPrice":"178元",
+        "sold": "已售42134",
+        "imgUrl": "http://p0.meituan.net/deal/d5e142c3dcca778edcad372f638212ef584033.jpg"
+      }
+    ]
   },
   {
     "id": "04",
@@ -172,6 +202,15 @@
   },
   {
     "id": "20",
+    "name": "胖哥俩肉蟹煲",
+    "type": "[14店通用]200元14店通用代金券1张",
+    "price": "190",
+    "originalPrice":"200元",
+    "sold": "已售1510",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "21",
     "name": "胖哥俩肉蟹煲",
     "type": "[14店通用]200元14店通用代金券1张",
     "price": "190",

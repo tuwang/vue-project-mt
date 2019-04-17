@@ -20,7 +20,7 @@
     <div class="nav">
       <ul>
         <li v-for="(item,index) in navList" :key="index">
-          <router-link :to= item.href>
+          <router-link :to="item.href">
             <i :class="[ 'iconfont', item.icon ]" :style="{ color:item.color }"></i>
             <span>{{ item.name }}</span>
           </router-link>
@@ -30,33 +30,41 @@
     <div class="list">
       <dl>
         <dt>猜你喜欢</dt>
-        <dd 
-          v-for="item in stortList"
-          :key="item.id">
-          <router-link :to="{ name:'detail', params: { id: item.id } }">
-            <div class="deal">
-              <div class="deal_left">
-                <img
-                  :src=item.imgUrl
-                  alt
-                >
-              </div>
-              <div class="deal_rigth">
-                <div class="name">{{ item.name }}</div>
-                <div class="describe">{{ item.type }}</div>
-                <div class="price">
-                  <div class="p_left">
-                    <span>{{ item.price }}元</span>
-                    <span>门市价:{{ item.originalPrice }}</span>
+        <van-list
+          v-model="loading"
+          :finished="finished"
+          finished-text="没有更多了"
+          loading-text="拼命中..."
+          @load="onLoad"
+          :offset="10"
+        >
+          <van-cell v-for="item in list" :key="item.id">
+            <template>
+              <dd>
+                <router-link :to="{ name:'detail', params: { id: item.id } }">
+                  <div class="deal">
+                    <div class="deal_left">
+                      <img :src="item.imgUrl" alt>
+                    </div>
+                    <div class="deal_rigth">
+                      <div class="name">{{ item.name }}</div>
+                      <div class="describe">{{ item.type }}</div>
+                      <div class="price">
+                        <div class="p_left">
+                          <span>{{ item.price }}元</span>
+                          <span>门市价:{{ item.originalPrice }}</span>
+                        </div>
+                        <div class="p_right">
+                          <span>{{ item.sold }}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="p_right">
-                    <span>{{ item.sold }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </dd>
+                </router-link>
+              </dd>
+            </template>
+          </van-cell>
+        </van-list>
         <dd class="dd">
           <a href="#">
             <div>查看全部团购</div>
@@ -69,11 +77,12 @@
   </div>
 </template>
 <script>
-import FooterBar from '../components/FooterBar.vue'
-import Axios from 'axios'
-import { mapMutations, mapState, mapGetters, mapActions } from 'vuex';
+import FooterBar from "../components/FooterBar.vue";
+
+import { mapMutations, mapState, mapGetters, mapActions } from "vuex";
+
 export default {
-  name: 'app',
+  name: "List",
   data() {
     return {
       navList: [
@@ -127,12 +136,25 @@ export default {
           color: "#599eec",
           icon: "icon-huoche"
         }
-      ],
-      stortList: []
+      ]
+      // stortList: []
     };
   },
+
+  computed: {
+    ...mapState("seller", ["list", "pageNum", "pageSize", "totalSize"]),
+    ...mapGetters("seller", ["totalPage", "finished"]),
+    loading: {
+      get() {
+        return this.$store.state.seller.loading;
+      },
+      set(value) {
+        this.$store.commit("seller/changeLoading", value);
+      }
+    }
+  },
   methods: {
-    getStortList() {
+    /* getStortList() {
       Axios.get('/json/imgUrl.json')
         .then(res => {
           let data = res.data
@@ -140,14 +162,21 @@ export default {
           this.stortList = data
           // console.log(this.stortList)
         })
-    }
+    } */
+    ...mapMutations("seller", [
+      "changeList",
+      "changeTotalSize",
+      "changeLoading",
+      "addPageNum"
+    ]),
+    ...mapActions("seller", ["onLoad"])
   },
   components: {
     FooterBar
-  },
-  created() {
-    this.getStortList()
   }
+  /* created() {
+    this.getStortList()
+  } */
 };
 </script>
 
