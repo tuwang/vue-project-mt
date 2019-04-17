@@ -7,17 +7,8 @@ export default new VueRouter({
   routes: [
     {
       path: '/home',
-      component: () => import('./views/Home.vue')
-      /* children: [
-        { path: 'search', name: 'search', component: () => import('./views/Search.vue') }
-      ] */
+      component: () => import('./views/Home.vue'),
     },
-<<<<<<< HEAD
-    // {
-    //   path: '/city',
-    //   component: () => import('./views/City.vue')
-    // }
-=======
     {
       path: '/center',
       component: () => import('./views/Center.vue')
@@ -27,13 +18,12 @@ export default new VueRouter({
       name: 'search',
       component: () => import('./views/Search.vue')
     },
-    { path: '/detail/:id',
-      name:'detail', 
-      component: () => import('./views/Detail.vue') },
+    {
+      path: '/detail', component: () => import('./views/Details.vue')
+    },
     {
       path: '*',
       redirect: '/home'
     }
->>>>>>> b600a2a2b3857be46ebc05af002e5b7e6ebf357b
   ]
 })

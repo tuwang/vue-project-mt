@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar></nav-bar>
+    <navBar :tabs="tabs"></navBar>
     <!-- banner图区域 -->
     <Banner></Banner>
     <!-- 搜索框 -->
@@ -75,6 +75,11 @@
 import navBar from '../components/NavBar.vue'
 import Banner from '../components/Banner.vue'
 export default {
+  data () {
+    return {
+      tabs: { title: '搜索', icon1: 'icon-homee', name1: '首页', icon2: 'icon-menu', name2: '导航' }
+    }
+  },
   components: {
     navBar,
     Banner
@@ -84,6 +89,7 @@ export default {
 
 <style lang="less">
 @import '../styles/common/reset.less';
+@import '../styles/common/common.less';
 // search区
 #search-wrap{
   min-height: 500px;
