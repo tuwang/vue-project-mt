@@ -1,0 +1,221 @@
+[
+  {
+    "id": "01",
+    "name": "汉釜宫韩式自助烤肉火锅",
+    "type": "[龙岗中心城]自助晚餐",
+    "price": "49.9",
+    "originalPrice":"58元",
+    "sold": "已售126241",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/cfe15389663f0c1d45cd0dc3397eb762130703.jpg",
+    "goods": [
+      {
+        "goodId": 100,
+        "name": "汉釜宫韩式自助烤肉火锅",
+        "price": "49.9",
+        "originalPrice":"58元",
+        "sold": "已售126241",
+        "imgUrl": "http://p0.meituan.net/deal/459a3442830ca3b65d4c23e6a92f0c44344843.jpg"
+      }
+    ]
+  },
+  {
+    "id": "02",
+    "name": "正新鸡排",
+    "type": "[3店通用]正新鸡排1份，提供免费WiFi",
+    "price": "8.9",
+    "originalPrice":"15元",
+    "sold": "已售137065",
+    "imgUrl":"http://p1.meituan.net/200.0/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg@69_0_564_564a%7C267h_267w_2e_90Q",
+    "goods": [
+      {
+        "goodsId": 101,
+        "name": "正新鸡排",
+        "price": "8.9",
+        "originalPrice":"15元",
+        "sold": "已售137065",
+        "imgUrl": "http://p1.meituan.net/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg"
+      }
+    ]
+  },
+  {
+    "id": "03",
+    "name": "四海一家",
+    "type": "[世界之窗]单人自助午餐",
+    "price": "163",
+    "originalPrice":"178元",
+    "sold": "已售42134",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/d5e142c3dcca778edcad372f638212ef584033.jpg@698_0_1802_1802a%7C267h_267w_2e_90Q",
+    "goods": [
+      {
+        "goodsId": 102,
+        "name": "四海一家",
+        "price": "163",
+        "originalPrice":"178元",
+        "sold": "已售42134",
+        "imgUrl": "http://p0.meituan.net/deal/d5e142c3dcca778edcad372f638212ef584033.jpg"
+      }
+    ]
+  },
+  {
+    "id": "04",
+    "name": "美浮宫自助餐厅",
+    "type": "[2店通用]单人海鲜自助餐券",
+    "price": "77.8",
+    "originalPrice":"88元",
+    "sold": "已售21753",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/e4b18ae7e48350d1b313c8befc8782e5242830.jpg@267h_267w_2e_90Q"
+  },
+  {
+    "id": "05",
+    "name": "千滋百味自助烤肉火锅",
+    "type": "[东门]单人自助餐",
+    "price": "56.8",
+    "originalPrice":"78元",
+    "sold": "已售208950",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/e5d23cf845b1689d274f1a6761ca66cc48157.jpg@100_0_400_400a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "06",
+    "name": "汤响自助回转火锅百汇",
+    "type": "[3店通用]超值自助回转火锅",
+    "price": "40",
+    "originalPrice":"59元",
+    "sold": "已售25908",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/e5d23cf845b1689d274f1a6761ca66cc48157.jpg@100_0_400_400a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "07",
+    "name": "愿者上钩",
+    "type": "[华强南]超值烤鱼套餐，建议3人使用",
+    "price": "108",
+    "originalPrice":"150元",
+    "sold": "已售583",
+    "imgUrl":"http://p1.meituan.net/200.0/deal/9fb0507b3b81ce1118523860b020f73c103348.jpg@141_0_564_564a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "08",
+    "name": "井格重庆火锅",
+    "type": "[会展中心]100元代金券1张，全场通用",
+    "price": "55",
+    "originalPrice":"100元",
+    "sold": "已售2828",
+    "imgUrl":"http://p1.meituan.net/200.0/deal/5ed6973c7753fa7419e570d68aa2398a710363.jpg@267h_267w_2e_90Q"
+  },
+  {
+    "id": "09",
+    "name": "吉寿司",
+    "type": "[沙井]单人自助餐",
+    "price": "65",
+    "originalPrice":"68元",
+    "sold": "已售127705",
+    "imgUrl":"http://p1.meituan.net/200.0/deal/146abc7ba815b96898dc676a9944076230185.jpg"
+  },
+  {
+    "id": "10",
+    "name": "汉阳廷自助烤肉",
+    "type": "[龙华]烤肉单人自助餐",
+    "price": "65",
+    "originalPrice":"68元",
+    "sold": "已售174611",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/d15a6dbf3e332ddc634c41d492bbd857703622.jpg@267h_267w_2e_90Q"
+  },
+  {
+    "id": "11",
+    "name": "大龙燚火锅",
+    "type": "[4店通用]100元代金券1张，可叠加",
+    "price": "88",
+    "originalPrice":"100元",
+    "sold": "已售39019",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/f3677b71db061d51880e0ec626d0b66b111431.jpg"
+  },
+  {
+    "id": "12",
+    "name": "汉堡王",
+    "type": "[深圳等]狠霸王牛堡+鸡腿+薯霸王(小)+中可1份",
+    "price": "24.5",
+    "originalPrice":"49.5元",
+    "sold": "已售41523",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/c2ede296c0b6f4c55dec6e755fb905bd145602.jpg@262_0_808_808a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "13",
+    "name": "蛙奴炭烧牛蛙",
+    "type": "[3店通用]钜惠3到4人餐，提供免费WiFi",
+    "price": "178",
+    "originalPrice":"243元",
+    "sold": "已售9919",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/4c00fe7c31155c97016f83a26400f12a64512.jpg@103_0_500_500a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "14",
+    "name": "金胖肉蟹煲",
+    "type": "[2店通用]精选2人煲套餐，提供免费WiFi",
+    "price": "118",
+    "originalPrice":"148元",
+    "sold": "已售13176",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "15",
+    "name": "秋菊螺蛳粉",
+    "type": "[时代城]正餐4选1，提供免费WiFi",
+    "price": "12.9",
+    "originalPrice":"16元",
+    "sold": "已售87615",
+    "imgUrl":"http://p1.meituan.net/200.0/deal/a9521f5675f2224fbaa6e694675c74b0136205.jpg"
+  },
+  {
+    "id": "16",
+    "name": "思密达韩式自助烤肉",
+    "type": "[3店通用]烤肉火锅自助晚餐",
+    "price": "53.9",
+    "originalPrice":"58元",
+    "sold": "已售36024",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/cf8fab6d75a0b6ed68dee9eaae353ba8131403.jpg"
+  },
+  {
+    "id": "17",
+    "name": "真功夫",
+    "type": "[深圳等]冬(香)菇鸡腿肉饭+香滑蒸蛋1份",
+    "price": "18",
+    "originalPrice":"24元",
+    "sold": "已售11518",
+    "imgUrl":"http://p1.meituan.net/200.0/deal/08bbf8ba513e79063ac4251c7529b20b55199.jpg@157_0_486_486a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "18",
+    "name": "鹿角巷 THE ALLEY",
+    "type": "[西乡]黑糖鹿丸鲜奶1份",
+    "price": "18.8",
+    "originalPrice":"23元",
+    "sold": "已售4264",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/6675ee8adeb7e29b713c0c2b3d49b44868593.jpg@0_137_688_688a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "19",
+    "name": "吉野家",
+    "type": "[深圳等]小菇酱肉饭套餐，建议单人使用",
+    "price": "16.8",
+    "originalPrice":"29元",
+    "sold": "已售7978",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/8188a5cbcb561125d8ff908f8e2200e0214655.jpg@160_0_960_960a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "20",
+    "name": "胖哥俩肉蟹煲",
+    "type": "[14店通用]200元14店通用代金券1张",
+    "price": "190",
+    "originalPrice":"200元",
+    "sold": "已售1510",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+  },
+  {
+    "id": "21",
+    "name": "胖哥俩肉蟹煲",
+    "type": "[14店通用]200元14店通用代金券1张",
+    "price": "190",
+    "originalPrice":"200元",
+    "sold": "已售1510",
+    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+  }
+]

@@ -7,20 +7,20 @@
           <i class="iconfont icon-arrow-down"></i>
         </a>
       </div>
-      <div class="search">
-        <input type="text" placeholder="输入商家/品类/商圈">
-      </div>
+      <router-link :to="{ name:'search' }" class="search">
+        <i class="iconfont icon-sousuo"></i>
+        输入商家/品类/商圈
+      </router-link>
       <div class="my">
         <a>
           <i class="iconfont icon-wode"></i>
-          <span>我的</span>
         </a>
       </div>
     </div>
     <div class="nav">
       <ul>
         <li v-for="(item,index) in navList" :key="index">
-          <router-link to="item.href">
+          <router-link :to="item.href">
             <i :class="[ 'iconfont', item.icon ]" :style="{ color:item.color }"></i>
             <span>{{ item.name }}</span>
           </router-link>
@@ -30,31 +30,41 @@
     <div class="list">
       <dl>
         <dt>猜你喜欢</dt>
-        <dd>
-          <a href="#">
-            <div class="deal">
-              <div class="deal_left">
-                <img
-                  src="http://p1.meituan.net/200.0/deal/7b284ae8426ed2e34557596523fafaf6169906.jpg@69_0_564_564a%7C267h_267w_2e_90Q"
-                  alt
-                >
-              </div>
-              <div class="deal_rigth">
-                <div class="name">正新鸡排</div>
-                <div class="describe">[3店通用]正新鸡排一份</div>
-                <div class="price">
-                  <div class="p_left">
-                    <span>8.9元</span>
-                    <span>门市价:15元</span>
+        <van-list
+          v-model="loading"
+          :finished="finished"
+          finished-text="没有更多了"
+          loading-text="拼命中..."
+          @load="onLoad"
+          :offset="10"
+        >
+          <van-cell v-for="item in list" :key="item.id">
+            <template>
+              <dd>
+                <router-link :to="{ name:'detail', params: { id: item.id } }">
+                  <div class="deal">
+                    <div class="deal_left">
+                      <img :src="item.imgUrl" alt>
+                    </div>
+                    <div class="deal_rigth">
+                      <div class="name">{{ item.name }}</div>
+                      <div class="describe">{{ item.type }}</div>
+                      <div class="price">
+                        <div class="p_left">
+                          <span>{{ item.price }}元</span>
+                          <span>门市价:{{ item.originalPrice }}</span>
+                        </div>
+                        <div class="p_right">
+                          <span>{{ item.sold }}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="p_right">
-                    <span>已售137116</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </dd>
+                </router-link>
+              </dd>
+            </template>
+          </van-cell>
+        </van-list>
         <dd class="dd">
           <a href="#">
             <div>查看全部团购</div>
@@ -63,43 +73,16 @@
         </dd>
       </dl>
     </div>
-    <div class="footer">
-      <div class="footer_bar">
-        <a href="#" class="btn">登录</a>
-        <a href="#" class="btn">注册</a>
-        <div class="pull_right">
-          <span>城市:</span>
-          <a href="#" class="btn weak_btn">深圳</a>
-        </div>
-      </div>
-      <div class="footer_nav">
-        <a href="#">首页</a>|
-        <a href="#">我的</a>|
-        <a href="#">美团下载</a>|
-        <a href="#">电脑下载</a>|
-        <a href="#">帮助</a>
-      </div>
-      <div class="footer_link">
-        友情链接:
-        <a href="#">猫眼电影</a>
-        <a href="#">大众点评</a>
-        <a href="#">美团旅行</a>
-        <br>
-        <a href="#">榛果民宿</a>
-        <a href="#">大众点评下载</a>
-        <a href="#">美团收银官网</a>
-        <br>
-        <a href="#">大众点评餐饮学院</a>
-        <a href="#">快驴进货商家合作</a>
-      </div>
-      <div class="footer_copyright">
-        <p>&copy;2019 美团网 京ICP证070791号</p>
-      </div>
-    </div>
+    <FooterBar></FooterBar>
   </div>
 </template>
 <script>
+import FooterBar from "../components/FooterBar.vue";
+
+import { mapMutations, mapState, mapGetters, mapActions } from "vuex";
+
 export default {
+  name: "List",
   data() {
     return {
       navList: [
@@ -154,8 +137,46 @@ export default {
           icon: "icon-huoche"
         }
       ]
+      // stortList: []
     };
+  },
+
+  computed: {
+    ...mapState("seller", ["list", "pageNum", "pageSize", "totalSize"]),
+    ...mapGetters("seller", ["totalPage", "finished"]),
+    loading: {
+      get() {
+        return this.$store.state.seller.loading;
+      },
+      set(value) {
+        this.$store.commit("seller/changeLoading", value);
+      }
+    }
+  },
+  methods: {
+    /* getStortList() {
+      Axios.get('/json/imgUrl.json')
+        .then(res => {
+          let data = res.data
+          // console.log(data)
+          this.stortList = data
+          // console.log(this.stortList)
+        })
+    } */
+    ...mapMutations("seller", [
+      "changeList",
+      "changeTotalSize",
+      "changeLoading",
+      "addPageNum"
+    ]),
+    ...mapActions("seller", ["onLoad"])
+  },
+  components: {
+    FooterBar
   }
+  /* created() {
+    this.getStortList()
+  } */
 };
 </script>
 
@@ -182,21 +203,18 @@ export default {
     }
   }
   .search {
-    width: 517px;
+    width: 500px;
     height: 64px;
     float: left;
+    line-height: 64px;
     border-radius: 4px;
+    font-size: 24px;
     margin-top: 20px;
-    input {
-      border: 0;
-      width: 517px;
-      height: 64px;
-      font-size: 24px;
-      padding-left: 17px;
-      line-height: 64px;
-      background: rgba(0, 0, 0, 0.15);
-    }
-    ::-webkit-input-placeholder {
+    padding-left: 17px;
+    color: #eee;
+    background: rgba(0, 0, 0, 0.15);
+    i {
+      font-size: 28px;
       color: #fff;
     }
   }
@@ -214,9 +232,6 @@ export default {
       color: #fff;
       i {
         font-size: 50px;
-        height: 50px;
-        margin-top: 20px;
-        line-height: 50px;
         display: block;
         color: #fff;
       }
@@ -309,7 +324,7 @@ export default {
               font-size: 24px;
             }
             .price {
-              margin-top: 44px;
+              margin-top: 52px;
               line-height: 19px;
               .p_left {
                 float: left;
@@ -345,57 +360,6 @@ export default {
         }
       }
     }
-  }
-}
-.footer {
-  margin-top: 15px;
-  padding: 0 10px 20px;
-  .btn {
-    display: inline-block;
-    line-height: 60px;
-    font-size: 28px;
-    border: 1px solid #06c1ae;
-    border-radius: 6px;
-    padding: 0 32px;
-    color: #06c1ae;
-    text-align: center;
-  }
-  .weak_btn {
-    padding: 0 44px;
-    margin-left: 20px;
-  }
-  .footer_bar {
-    height: 60px;
-    font-size: 28px;
-    margin-bottom: 40px;
-    :first-child {
-      margin-right: 20px;
-    }
-    .pull_right {
-      float: right;
-    }
-  }
-  .footer_nav {
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
-    margin-bottom: 20px;
-    a {
-      padding: 0 30px;
-      color: #06c1ae;
-    }
-  }
-  .footer_link {
-    text-align: center;
-    margin-bottom: 20px;
-    a {
-      padding: 0 20px;
-      line-height: 20px;
-      color: #06c1ae;
-    }
-  }
-  .footer_copyright {
-    text-align: center;
   }
 }
 </style>

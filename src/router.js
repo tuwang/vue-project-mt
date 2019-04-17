@@ -8,6 +8,9 @@ export default new VueRouter({
     {
       path: '/home',
       component: () => import('./views/Home.vue')
+      /* children: [
+        { path: 'search', name: 'search', component: () => import('./views/Search.vue') }
+      ] */
     },
     {
       path: '/center',
@@ -15,8 +18,12 @@ export default new VueRouter({
     },
     {
       path: '/search',
+      name: 'search',
       component: () => import('./views/Search.vue')
     },
+    { path: '/detail/:id',
+      name:'detail', 
+      component: () => import('./views/Detail.vue') },
     {
       path: '/login',
       component: () => import('./views/login.vue')
