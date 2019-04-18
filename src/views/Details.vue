@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <navBar :tabs="tabs"></navBar>
-    <div class="list">
+    <div class="list"
+      v-for="item in info.goods"
+      :key="item.id">
       <a href="" class="toutu">
-        <img src="http://p0.meituan.net/deal/459a3442830ca3b65d4c23e6a92f0c44344843.jpg" alt="" class="toutu-img">
+        <img :src="item.imgUrl" alt="" class="toutu-img">
         <div class="desc">
-          <h1 class="title">汉釜宫韩式自助烤肉火锅</h1>
+          <h1 class="title">{{ item.name }}</h1>
           <span>自助晚餐</span>
         </div>
       </a>
@@ -13,9 +15,9 @@
         <div class="buy-price group-padding">
           <div class="container">
             <div class="price">
-              <strong class="strong-color">49.9</strong>
+              <strong class="strong-color">{{ item.price }}</strong>
               <span class="strong-color">元</span>
-              <span>门市价:58元</span>
+              <span>门市价:{{ item.originalPrice }}</span>
             </div>
             <a href="" class="btn">立即抢购</a>
           </div>
@@ -109,14 +111,35 @@
 
 <script>
 import navBar from '../components/NavBar.vue'
+import axios from 'axios'
 export default {
   data () {
     return {
-      tabs: { title: '团购详情', icon1: 'icon-collect', name1: '收藏', icon2: 'icon-menu', name2: '导航' }
+      tabs: { title: '团购详情', icon1: 'icon-collect', name1: '收藏', icon2: 'icon-menu', name2: '导航' },
+      info: {}
+    }
+  },
+  methods: {
+    getDetailData () {
+      axios.get('/json/imgUrl.json', {
+        params: {
+          id: this.$route.params.id
+        }
+      }).then(res => {
+        let data = res.data;
+        this.info = data.find(item => {
+          // console.log(item.goods)
+          // console.log(this.$route)
+          return item.id === parseInt(this.$route.params.id)
+        })
+      })
     }
   },
   components: {
     navBar
+  },
+  created () {
+    this.getDetailData();
   }
 }
 
