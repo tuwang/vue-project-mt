@@ -24,17 +24,47 @@ export default new VueRouter({
       redirect: '/cinema/nowPlaying',
       component: () => import('./views/Cinema.vue'),
       children: [
-        { path: 'nowPlaying', component: () => import('./components/FileNowPlaying.vue') },
-        { path:'comingSoon', component: () => import('./components/FileComingSoon.vue') }
+        { 
+          path: 'nowPlaying', 
+          component: () => import('./components/FileNowPlaying.vue') },
+        { 
+          path:'comingSoon', 
+          component: () => import('./components/FileComingSoon.vue') }
       ]
     },
-    { path:'/city', name:'city', component: () => import('./views/City.vue') },
+    { 
+      path:'/city', name:'city', 
+      component: () => import('./views/City.vue') },
     {
-      path: '/detail', component: () => import('./views/Details.vue')
+      path: '/detail', 
+      name: 'detail',
+      component: () => import('./views/Details.vue')
+    },
+    {
+      path: '/center',
+      name: 'center',
+      component: () => import('./views/Center.vue'),
+      beforeEnter: (to, from, next) => {
+        if(!window.isLogin) {
+          //没有登录
+          next({
+            path: '/login',
+            query: {
+              redirect: to.fullPath
+            }
+          })
+        } else {
+          next()
+        }
+      }
     },
     {
       path: '/login',
-      component: () => import('./views/login.vue')
+      component: () => import('./views/login.vue'),
+      beforeEnter: (to, from, next) => {
+        console.log('路由独享守卫，只有在进入login的时候出发')
+        next()
+      }
     },
     {
       path: '*',

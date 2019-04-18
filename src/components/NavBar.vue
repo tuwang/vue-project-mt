@@ -1,7 +1,7 @@
 <template>
   <header class="navbar">
     <div class="nav-wrap-left">
-        <a class="back">
+        <a class="back" @click="back">
           <i class="text-icon"></i>
         </a>
     </div>

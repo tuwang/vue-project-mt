@@ -12,9 +12,9 @@
         输入商家/品类/商圈
       </router-link>
       <div class="my">
-        <a>
+        <router-link :to="{ name: 'center' }">
           <i class="iconfont icon-wode"></i>
-        </a>
+        </router-link>
       </div>
     </div>
     <div class="nav">
