@@ -1,20 +1,6 @@
 <template>
   <div>
-    <header class="navbar">
-      <div class="nav-wrap-left">
-        <a href="#">
-          <i class="iconfont icon-arrow-left"></i>
-        </a>
-      </div>
-      <span class="nav-title">美团网</span>
-      <div class="nav-wrap-right">
-        <a href="#" class="nav">
-          <span>
-            <i class="iconfont icon-daohang"></i>导航
-          </span>
-        </a>
-      </div>
-    </header>
+    <navBar :tabs="tabs"></navBar>
     <div id="login">
       <dl class="list">
         <dd class="nav">
@@ -61,12 +47,14 @@
 </template>
 
 <script>
+import navBar from '../components/NavBar.vue'
 export default {
   data() {
     return {
       className: "account",
       isLeft: true,
-      isRight: false
+      isRight: false,
+      tabs: { title: '美团网', icon1: 'icon-homee', name1: '首页', icon2: 'icon-ss', name2: '搜索' }
     };
   },
   computed: {
@@ -79,12 +67,17 @@ export default {
               this.isRight = true;
           }
       }
+  },
+
+  components: {
+    navBar
   }
 };
 </script>
 
 <style lang="less">
 @import "../styles/common/reset.less";
+@import "../styles/common/common.less";
 body,
 html {
   background-color: #f0efed;

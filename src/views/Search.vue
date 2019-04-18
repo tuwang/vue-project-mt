@@ -77,7 +77,7 @@ import Banner from '../components/Banner.vue'
 export default {
   data () {
     return {
-      tabs: { title: '搜索', icon1: 'icon-homee', name1: '首页', icon2: 'icon-menu', name2: '导航' }
+      tabs: { title: '搜索', icon1: 'icon-homee', name1: '首页', icon2: 'icon-menuu', name2: '导航' }
     }
   },
   components: {

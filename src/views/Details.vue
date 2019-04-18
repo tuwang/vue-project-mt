@@ -112,7 +112,7 @@ import navBar from '../components/NavBar.vue'
 export default {
   data () {
     return {
-      tabs: { title: '团购详情', icon1: 'icon-collect', name1: '收藏', icon2: 'icon-menu', name2: '导航' }
+      tabs: { title: '团购详情', icon1: 'icon-collect', name1: '收藏', icon2: 'icon-menuu', name2: '导航' }
     }
   },
   components: {
