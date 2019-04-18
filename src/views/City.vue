@@ -1,25 +1,6 @@
 <template>
   <div>
-    <header class="navbar">
-      <div class="nav-wrap-left">
-        <a href="#">
-          <i class="iconfont icon-arrow-left"></i>
-        </a>
-      </div>
-      <span class="nav-title">选择城市</span>
-      <div class="nav-wrap-right">
-        <a href="#" class="home">
-          <span>
-            <i class="iconfont icon-home"></i>首页
-          </span>
-        </a>
-        <a href="#" class="sousuo">
-          <span>
-            <i class="iconfont icon-sousuo"></i>搜索
-          </span>
-        </a>
-      </div>
-    </header>
+    <navBar :tabs="tabs"></navBar>
     <div class="wrapper">
       <div class="city-box">
         定位城市：
@@ -94,41 +75,42 @@
 </template>
 
 <script>
-import axios from "axios";
-import { close } from 'fs';
-
+import axios from "axios"
+import { close } from 'fs'
+import navBar from '../components/NavBar.vue'
 export default {
   data() {
     return {
       citys: [],
+      tabs: { title: '选择城市', icon1: 'icon-homee', name1: '首页', icon2: 'icon-ss', name2: '搜索' }
     }
   },
 
-computed: {
-    myCitys() {
-      var index = 0;
-      var flag = {};
-      var result = [];
-      this.citys.forEach(item => {
-        var py = item.pinyin.substr(0, 1).toUpperCase();
+  computed: {
+      myCitys() {
+        var index = 0;
+        var flag = {};
+        var result = [];
+        this.citys.forEach(item => {
+          var py = item.pinyin.substr(0, 1).toUpperCase();
 
-        if (flag[py]) {
-          result[flag[py] - 1].list.push(item);
-        } else {
-          var obj = {
-            py: py,
-            list: [ item ]
-          };
-          flag[py] = ++index;
-          result.push(obj);
-        }
-      })
-      result.sort((a, b) => {
-        return a.py.charCodeAt() - b.py.charCodeAt();
-      })
-      return result;
-    }
-},
+          if (flag[py]) {
+            result[flag[py] - 1].list.push(item);
+          } else {
+            var obj = {
+              py: py,
+              list: [ item ]
+            };
+            flag[py] = ++index;
+            result.push(obj);
+          }
+        })
+        result.sort((a, b) => {
+          return a.py.charCodeAt() - b.py.charCodeAt();
+        })
+        return result;
+      }
+  },
 
 // hotCitys() {
 //       return this.citys.filter(item => {
@@ -155,6 +137,10 @@ computed: {
     }
   },
 
+  components: {
+    navBar
+  },
+
   created() {
     this.getCityList();
   }
@@ -163,62 +149,11 @@ computed: {
 
 <style lang="less">
 @import "../styles/common/reset.less";
+@import "../styles/common/common.less";
 body,
 html {
   background-color: #f0efed;
 }
-.navbar {
-  height: 100px;
-  background: #06c1ae;
-
-  .nav-wrap-left {
-    float: left;
-    width: 105px;
-    height: 100px;
-
-    a {
-      display: block;
-      text-align: center;
-    }
-
-    i {
-      font-size: 60px;
-      color: #fff;
-    }
-  }
-  .nav-title {
-    float: left;
-    width: 446px;
-    line-height: 100px;
-    height: 100px;
-    font-size: 36px;
-    color: #fff;
-    text-align: center;
-  }
-  .nav-wrap-right {
-    float: left;
-    width: 180px;
-    height: 100px;
-
-    a {
-      display: inline-block;
-      width: 85px;
-      text-align: center;
-    }
-
-    span {
-      font-size: 20px;
-      color: #fff;
-    }
-
-    i {
-      display: block;
-      font-size: 40px;
-      color: #fff;
-    }
-  }
-}
-
 .wrapper {
   padding: 0px 20px;
 

@@ -19,7 +19,7 @@
               <span class="strong-color">元</span>
               <span>门市价:{{ item.originalPrice }}</span>
             </div>
-            <a href="" class="btn">立即抢购</a>
+            <router-link :to="{ name: 'cart' }" class="btn">立即抢购</router-link>
           </div>
         </div>
         <div class="agreement group-padding">
@@ -115,8 +115,9 @@ import axios from 'axios'
 export default {
   data () {
     return {
-      tabs: { title: '团购详情', icon1: 'icon-collect', name1: '收藏', icon2: 'icon-menu', name2: '导航' },
-      info: {}
+      tabs: { title: '团购详情', icon1: 'icon-collect', name1: '收藏', icon2: 'icon-menuu', name2: '导航' },
+      info: {},
+
     }
   },
   methods: {
@@ -128,12 +129,12 @@ export default {
       }).then(res => {
         let data = res.data;
         this.info = data.find(item => {
-          // console.log(item.goods)
+          console.log(item.goods)
           // console.log(this.$route)
           return item.id === parseInt(this.$route.params.id)
         })
       })
-    }
+    },
   },
   components: {
     navBar
@@ -149,6 +150,7 @@ export default {
 @import '../styles/common/common.less';
 .list{
   max-height: 99999px;
+  margin-top: 0;
 
   .toutu{
     display: block;

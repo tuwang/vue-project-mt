@@ -1,18 +1,20 @@
 import vue from 'vue'
 import VueRouter from 'vue-router'
 
+window.isLogin = false
+
 vue.use(VueRouter)
 
-export default new VueRouter({
+const router = new VueRouter({
   routes: [
     {
       path: '/home',
       component: () => import('./views/Home.vue'),
     },
-    {
+    /* {
       path: '/center',
       component: () => import('./views/Center.vue')
-    },
+    }, */
     {
       path: '/search',
       name: 'search',
@@ -67,8 +69,14 @@ export default new VueRouter({
       }
     },
     {
+      path: '/cart/:id',
+      name: 'cart',
+      component: () => import('./views/ShopCart.vue')
+    },
+    {
       path: '*',
       redirect: '/home'
     }
   ]
 })
+export default router

@@ -1,29 +1,15 @@
 <template>
   <div>
-    <header class="navbar">
-      <div class="nav-wrap-left">
-        <a href="#">
-          <i class="iconfont icon-arrow-left"></i>
-        </a>
-      </div>
-      <span class="nav-title">美团网</span>
-      <div class="nav-wrap-right">
-        <a href="#" class="nav">
-          <span>
-            <i class="iconfont icon-daohang"></i>导航
-          </span>
-        </a>
-      </div>
-    </header>
+    <navBar :tabs="tabs"></navBar>
     <div id="login">
       <dl class="list">
         <dd class="nav">
           <ul>
             <li>
-              <a href="#" @click="className = 'account'">美团账号登录</a>
+              <a href="#" @click="changeType('account')">美团账号登录</a>
             </li>
             <li>
-              <a href="#" @click="className = 'phone'">手机验证登录</a>
+              <a href="#" @click="changeType('phone')">手机验证登录</a>
             </li>
             <div class="slide" :class="{ left: isLeft, right: isRight }"></div>
           </ul>
@@ -31,9 +17,9 @@
       </dl>
       <div id="from">
         <form action id="login-from" v-if="className === 'account'">
-          <input id="username" type="text" placeholder="账户名/手机号/Email">
-          <input id="password" type="password" placeholder="请输入您的密码">
-          <button type="submit" id="btn">登录</button>
+          <input id="username" type="text" placeholder="账户名/手机号/Email" v-model="uphone">
+          <input id="password" type="password" placeholder="请输入您的密码" v-model="password">
+          <button type="submit" id="btn" @click="handleLogin">登录</button>
         </form>
         <form action id="phone-login" v-else>
           <dl>
@@ -45,7 +31,7 @@
               <input id="note" type="tel" placeholder="请输入短信验证码">
             </dd>
           </dl>
-          <button type="submit" class="btn-phone">登录</button>
+          <button type="submit" class="btn-phone" >登录</button>
         </form>
       </div>
       <ul class="subline">
@@ -61,90 +47,60 @@
 </template>
 
 <script>
+import navBar from '../components/NavBar.vue'
 export default {
   data() {
     return {
       className: "account",
+      uphone:'',
+      password:'',
       isLeft: true,
-      isRight: false
-    };
+      isRight: false,
+      tabs: { title: '美团网', icon1: 'icon-homee', name1: '首页', icon2: 'icon-ss', name2: '搜索' }
+    }
   },
-  computed: {
-      fn1 () {
-          if (this.className === 'account') {
-              this.isLeft = true;
-              this.isRight = false;
-          }else if (this.className === 'phone') {
-              this.isLeft = false;
-              this.isRight = true;
-          }
-      }
+  methods: {
+    handleLogin () {
+      window.isLogin = true
+      // 假设这块登录成功。我们需要做的事情是：跳转回去
+      // 1. 不管如何都跳转首页
+      // this.$router.push('/');
+      console.log(1)
+      // 2. 用户本来是想要进入哪里，就让他回答哪里
+      var redirect = this.$route.query.redirect || '/'
+      console.log(window.isLogin)
+      // console.log(redirect)
+      this.$router.replace(redirect)
+    },
+    changeType (name) {
+      this.className = name
+    }
+  },
+  watch: {
+    className: function () {
+      this.isLeft = this.isRight;
+      this.isRight = !this.isLeft;
+    }
+  },
+  components: {
+    navBar
   }
 };
 </script>
 
 <style lang="less">
 @import "../styles/common/reset.less";
+@import "../styles/common/common.less";
 body,
 html {
   background-color: #f0efed;
 }
-.navbar {
-  height: 100px;
-  background: #06c1ae;
-
-  .nav-wrap-left {
-    float: left;
-    width: 105px;
-    height: 100px;
-
-    a {
-      display: block;
-      text-align: center;
-    }
-
-    i {
-      font-size: 60px;
-      color: #fff;
-    }
-  }
-  .nav-title {
-    float: left;
-    width: 446px;
-    line-height: 100px;
-    height: 100px;
-    font-size: 36px;
-    color: #fff;
-    text-align: center;
-  }
-  .nav-wrap-right {
-    float: right;
-    width: 180px;
-    height: 100px;
-
-    a {
-      display: block;
-      float: right;
-    }
-
-    span {
-      font-size: 20px;
-      color: #fff;
-    }
-
-    i {
-      display: block;
-      font-size: 40px;
-      color: #fff;
-    }
-  }
-}
-
 #login {
   display: block;
 
   .list {
     border-bottom: 1px solid #ddd8ce;
+    margin-top: 0;
 
     .nav {
       height: 84px;
@@ -193,7 +149,6 @@ html {
 
   #login-from {
     height: 290px;
-    box-sizing: border-box;
 
     #username {
       display: block;
@@ -276,11 +231,13 @@ html {
 
       .noteCode {
         width: 100%;
+        height: 100px;
+        background-color: #fff;
         border: 0;
 
         #note {
           width: 690px;
-          margin-top: 10px;
+          margin-top: 20px;
           margin-left: 15px;
           border: 0;
           height: 60px;
@@ -300,7 +257,7 @@ html {
       font-size: 40px;
       text-align: center;
       padding: 0px 32px;
-      margin: 20px 20px;
+      margin: 30px 20px;
       border-radius: 6px;
       border: 0;
       background-color: #dcdcdc;

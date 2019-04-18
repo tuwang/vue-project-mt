@@ -127,7 +127,7 @@ export default {
           height: 40px;
         }
 
-        .icon-menu{
+        .icon-menuu{
           background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
           background-position: -44px -44px;
           width: 40px;
@@ -141,7 +141,7 @@ export default {
           height: 40px;
         }
 
-        .icon-search{
+        .icon-ss{
           background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
           background-position: 0 -44px;
           width: 40px;

@@ -101,7 +101,7 @@ import navBar from '../components/NavBar.vue'
 export default {
   data () {
     return {
-      tabs: { title: '我的美团', icon1: 'icon-homee', name1: '首页', icon2: 'icon-search', name2: '搜索' }
+      tabs: { title: '我的美团', icon1: 'icon-homee', name1: '首页', icon2: 'icon-ss', name2: '搜索' }
     }
   },
   components: {

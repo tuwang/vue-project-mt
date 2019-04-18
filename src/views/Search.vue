@@ -77,7 +77,7 @@ import Banner from '../components/Banner.vue'
 export default {
   data () {
     return {
-      tabs: { title: '搜索', icon1: 'icon-homee', name1: '首页', icon2: 'icon-menu', name2: '导航' }
+      tabs: { title: '搜索', icon1: 'icon-homee', name1: '首页', icon2: 'icon-menuu', name2: '导航' }
     }
   },
   components: {
@@ -87,10 +87,13 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang="less" scope>
 @import '../styles/common/reset.less';
 @import '../styles/common/common.less';
 // search区
+.navbar .nav-wrap-right{
+  float:none !important;
+}
 #search-wrap{
   min-height: 500px;
 
