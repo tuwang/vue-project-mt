@@ -2,7 +2,7 @@
   <div>
     <navBar :tabs="tabs"></navBar>
     <div class="content-wrap" v-for="item in info.goods" :key="item.id">
-      <div class="content-title">{{ item.name }}</div>
+      <div class="content-title">{{ item.type }}</div>
       <div class="deal-content-wrap">
         <div class="content-info-line">
           单价:
@@ -11,9 +11,9 @@
         <div class="content-info-line border-t">
           数量:
           <div class="operate">
-            <button type="button" class="btn minus btn-disabled" @click="minus()">-</button>
+            <button type="button" class="btn minus" :class="{ disable: isDisabled, weak: isWeak }" @click="minus()">-</button>
             <input type="text" class="number" :value="num">
-            <button type="button" class="btn add btn-weak" @click="add()">+</button>
+            <button type="button" class="btn add weak" @click="add()">+</button>
           </div>
         </div>
         <div class="content-info-line border-t">
@@ -43,11 +43,13 @@ export default {
       tabs: { title: '提交订单' },
       info: {},
       num: 1,
-      totulPrice: 0,
+      totul: 0,
+      isDisabled: true,
+      isWeak: false
     }
   },
   methods: {
-    getDetailData () {
+    getDetailDatas () {
       axios.get('/json/imgUrl.json', {
         params: {
           id: this.$route.params.id
@@ -55,7 +57,7 @@ export default {
       }).then(res => {
         let data = res.data;
         this.info = data.find(item => {
-          console.log(item.goods)
+          // console.log(item.goods)
           // console.log(this.$route)
           return item.id === parseInt(this.$route.params.id)
         })
@@ -63,21 +65,41 @@ export default {
     },
     add () {
       this.num += 1;
+      this.totulPrice;
       return this.num;
     },
     minus () {
       if (this.num > 1) {
         this.num -= 1;
+        this.totulPrice;
         return this.num;
       }
     },
+  },
+  computed: {
+    totulPrice () {
+      let a = this.info.price
+      this.totul = this.num * a
+      return this.totul.toFixed(1)
+    }
+  },
+  watch: {
+    num :function () {
+      if (this.num > 1) {
+        this.isDisabled = false
+        this.isWeak = true
+      } else {
+        this.isDisabled = true
+        this.isWeak = false
+      }
+    }
   },
   components: {
     navBar,
   },
   created () {
-    this.getDetailData();
-  }
+    this.getDetailDatas();
+  },
 }
 </script>
 
@@ -120,12 +142,13 @@ export default {
 
         .btn{
           width: 60px;
+          height: 60px;
           padding: 0;
           outline: 0;
           font-size: 50px;
-          line-height: 60px;
+          line-height: 55px;
           border-radius: 6px;
-          transform: translateY(8px);
+          transform: translateY(11px);
         }
 
         .minus{
@@ -146,7 +169,6 @@ export default {
 
         .add{
           margin-left: 10px;
-          transform: translateY(11px);
         }
 
       }

@@ -11,6 +11,8 @@
       {
         "goodId": 100,
         "name": "汉釜宫韩式自助烤肉火锅",
+        "type": "自助晚餐",
+        "adress": "龙岗区龙岗建设路宝能城市广场1楼（中心城沃尔玛一楼L1-21铺）",
         "price": "49.9",
         "originalPrice":"58元",
         "sold": "已售126241",
@@ -30,6 +32,8 @@
       {
         "goodsId": 101,
         "name": "正新鸡排",
+        "type": "正新鸡排",
+        "adress": "福田区沙尾东村72号（富强家乐福对面）",
         "price": "8.9",
         "originalPrice":"15元",
         "sold": "已售137065",
@@ -49,6 +53,8 @@
       {
         "goodsId": 102,
         "name": "四海一家",
+        "type": "单人自助午餐",
+        "adress": "南山区深南大道9028号华侨城威尼斯酒店旁益田假日广场3层（1号线世界之窗站A出口）",
         "price": "163",
         "originalPrice":"178元",
         "sold": "已售42134",
@@ -63,7 +69,19 @@
     "price": "77.8",
     "originalPrice":"88元",
     "sold": "已售21753",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/e4b18ae7e48350d1b313c8befc8782e5242830.jpg@267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/e4b18ae7e48350d1b313c8befc8782e5242830.jpg@267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 103,
+        "name": "美浮宫自助餐厅",
+        "type": "单人海鲜自助餐券",
+        "adress": "宝安区西环路2105号天虹商场七层715-6铺",
+        "price": "77.8",
+        "originalPrice":"88元",
+        "sold": "已售21753",
+        "imgUrl": "http://p0.meituan.net/deal/e4b18ae7e48350d1b313c8befc8782e5242830.jpg"
+      }
+    ]
   },
   {
     "id": 104,
@@ -72,8 +90,21 @@
     "price": "56.8",
     "originalPrice":"78元",
     "sold": "已售208950",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/e5d23cf845b1689d274f1a6761ca66cc48157.jpg@100_0_400_400a%7C267h_267w_2e_90Q"
+    "imgUrl":"https://p0.meituan.net/deal/db03b779cb75e8b3795479a67cb93040379560.jpg@360w_328h_1e_1c",
+    "goods" :[
+      {
+        "goodsId": 104,
+        "name": "千滋百味自助烤肉火锅",
+        "type": "单人自助餐",
+        "adress": "罗湖区解放路东门印象城3楼（二横街韩国城Ucity对面）",
+        "price": "56.8",
+        "originalPrice": "78元",
+        "sold": "已售21753",
+        "imgUrl": "https://p0.meituan.net/deal/b6cdea94f95f3d1d1a93bf04236895c8268490.jpg@1500w_640h_1e_1c"
+      }
+    ]
   },
+  
   {
     "id": 105,
     "name": "汤响自助回转火锅百汇",
@@ -81,7 +112,19 @@
     "price": "40",
     "originalPrice":"59元",
     "sold": "已售25908",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/e5d23cf845b1689d274f1a6761ca66cc48157.jpg@100_0_400_400a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/e5d23cf845b1689d274f1a6761ca66cc48157.jpg@100_0_400_400a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 105,
+        "name": "汤响自助回转火锅百汇",
+        "type": "超值自助回转火锅",
+        "adress": "宝安区深圳市宝安区西乡街道西乡大道与新湖路交汇处魅力时代花园A-J裙楼负二楼B2011A号",
+        "price": "40",
+        "originalPrice":"59元",
+        "sold": "已售25908",
+        "imgUrl": "http://p0.meituan.net/deal/e5d23cf845b1689d274f1a6761ca66cc48157.jpg"
+      }
+    ]
   },
   {
     "id": 106,
@@ -90,7 +133,19 @@
     "price": "108",
     "originalPrice":"150元",
     "sold": "已售583",
-    "imgUrl":"http://p1.meituan.net/200.0/deal/9fb0507b3b81ce1118523860b020f73c103348.jpg@141_0_564_564a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p1.meituan.net/200.0/deal/9fb0507b3b81ce1118523860b020f73c103348.jpg@141_0_564_564a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 106,
+        "name": "愿者上钩",
+        "type": "超值烤鱼套餐",
+        "adress": "宝安区福永镇龙翔北路26号",
+        "price": "108",
+        "originalPrice":"150元",
+        "sold": "已售583",
+        "imgUrl": "http://p0.meituan.net/deal/523cc100c9589d59ab855011f414fa3b41519.jpg"
+      }
+    ]
   },
   {
     "id": 107,
@@ -99,7 +154,19 @@
     "price": "55",
     "originalPrice":"100元",
     "sold": "已售2828",
-    "imgUrl":"http://p1.meituan.net/200.0/deal/5ed6973c7753fa7419e570d68aa2398a710363.jpg@267h_267w_2e_90Q"
+    "imgUrl":"http://p1.meituan.net/200.0/deal/5ed6973c7753fa7419e570d68aa2398a710363.jpg@267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 107,
+        "name": "井格重庆火锅",
+        "type": "超值二人套餐",
+        "adress": "福田区中心二路购物公园北园3号电梯2楼（小当家菜馆）",
+        "price": "55",
+        "originalPrice":"100元",
+        "sold": "已售2828",
+        "imgUrl": "http://p1.meituan.net/deal/5ed6973c7753fa7419e570d68aa2398a710363.jpg"
+      }
+    ]
   },
   {
     "id": 108,
@@ -108,7 +175,19 @@
     "price": "65",
     "originalPrice":"68元",
     "sold": "已售127705",
-    "imgUrl":"http://p1.meituan.net/200.0/deal/146abc7ba815b96898dc676a9944076230185.jpg"
+    "imgUrl":"http://p1.meituan.net/200.0/deal/146abc7ba815b96898dc676a9944076230185.jpg",
+    "goods" :[
+      {
+        "goodsId": 108,
+        "name": "吉寿司",
+        "type": "单人自助餐",
+        "adress": "宝安区沙井中心路与创新路交汇处形色城3楼（近沙井天虹）",
+        "price": "65",
+        "originalPrice":"68元",
+        "sold": "已售127705",
+        "imgUrl": "http://p0.meituan.net/deal/bf0b8fbf1834c7e75e06a4dc5e52cced41455.jpg"
+      }
+    ]
   },
   {
     "id": 109,
@@ -117,7 +196,19 @@
     "price": "65",
     "originalPrice":"68元",
     "sold": "已售174611",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/d15a6dbf3e332ddc634c41d492bbd857703622.jpg@267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/d15a6dbf3e332ddc634c41d492bbd857703622.jpg@267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 109,
+        "name": "汉阳廷自助烤肉",
+        "type": "单人自助餐",
+        "adress": "宝安区宝安大道6259号同泰时代广场4楼",
+        "price": "65",
+        "originalPrice":"68元",
+        "sold": "已售174611",
+        "imgUrl": "http://p0.meituan.net/deal/d15a6dbf3e332ddc634c41d492bbd857703622.jpg"
+      }
+    ]
   },
   {
     "id": 110,
@@ -126,7 +217,19 @@
     "price": "88",
     "originalPrice":"100元",
     "sold": "已售39019",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/f3677b71db061d51880e0ec626d0b66b111431.jpg"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/f3677b71db061d51880e0ec626d0b66b111431.jpg",
+    "goods" :[
+      {
+        "goodsId": 110,
+        "name": "大龙燚火锅",
+        "type": "100元代金券",
+        "adress": "南山区南山大道2009号一楼D区（南方航空大厦对面）",
+        "price": "88",
+        "originalPrice":"100元",
+        "sold": "已售39019",
+        "imgUrl": "http://p1.meituan.net/deal/fba9347aab47af97b76a8c448bfd43fb302793.jpg"
+      }
+    ]
   },
   {
     "id": 111,
@@ -135,7 +238,19 @@
     "price": "24.5",
     "originalPrice":"49.5元",
     "sold": "已售41523",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/c2ede296c0b6f4c55dec6e755fb905bd145602.jpg@262_0_808_808a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/c2ede296c0b6f4c55dec6e755fb905bd145602.jpg@262_0_808_808a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 111,
+        "name": "汉堡王",
+        "type": "狠霸王牛堡",
+        "adress": "宝安区宝安大道6259号同泰时代广场L1层L1-42-43号铺",
+        "price": "24.5",
+        "originalPrice":"49.5元",
+        "sold": "已售41523",
+        "imgUrl": "http://p0.meituan.net/deal/c2ede296c0b6f4c55dec6e755fb905bd145602.jpg"
+      }
+    ]
   },
   {
     "id": 112,
@@ -144,7 +259,19 @@
     "price": "178",
     "originalPrice":"243元",
     "sold": "已售9919",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/4c00fe7c31155c97016f83a26400f12a64512.jpg@103_0_500_500a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/4c00fe7c31155c97016f83a26400f12a64512.jpg@103_0_500_500a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 112,
+        "name": "蛙奴炭烧牛蛙",
+        "type": "钜惠3到4人餐",
+        "adress": "宝安区海城路与宝源路交汇处时代城购物广场6层",
+        "price": "178",
+        "originalPrice":"243元",
+        "sold": "已售9919",
+        "imgUrl": "http://p0.meituan.net/deal/4c00fe7c31155c97016f83a26400f12a64512.jpg"
+      }
+    ]
   },
   {
     "id": 113,
@@ -153,7 +280,19 @@
     "price": "118",
     "originalPrice":"148元",
     "sold": "已售13176",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 113,
+        "name": "金胖肉蟹煲",
+        "type": "精选2人煲套餐",
+        "adress": "龙华区民治大道牛栏前商业步行街岁宝百货一楼（肯德基旁15米，85度隔壁）",
+        "price": "118",
+        "originalPrice":"148元",
+        "sold": "已售13176",
+        "imgUrl": "http://p0.meituan.net/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg"
+      }
+    ]
   },
   {
     "id": 114,
@@ -162,7 +301,19 @@
     "price": "12.9",
     "originalPrice":"16元",
     "sold": "已售87615",
-    "imgUrl":"http://p1.meituan.net/200.0/deal/a9521f5675f2224fbaa6e694675c74b0136205.jpg"
+    "imgUrl":"http://p1.meituan.net/200.0/deal/a9521f5675f2224fbaa6e694675c74b0136205.jpg",
+    "goods" :[
+      {
+        "goodsId": 114,
+        "name": "秋菊螺蛳粉",
+        "type": "秋菊螺蛳粉",
+        "adress": "宝安区西乡街道海城路白金假日公寓1楼027号铺（人人乐侧面）",
+        "price": "12.9",
+        "originalPrice":"16元",
+        "sold": "已售87615",
+        "imgUrl": "http://p1.meituan.net/deal/c22ae0005ed824b56b2f91a09b355ba8394753.jpg"
+      }
+    ]
   },
   {
     "id": 115,
@@ -171,7 +322,19 @@
     "price": "53.9",
     "originalPrice":"58元",
     "sold": "已售36024",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/cf8fab6d75a0b6ed68dee9eaae353ba8131403.jpg"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/cf8fab6d75a0b6ed68dee9eaae353ba8131403.jpg",
+    "goods" :[
+      {
+        "goodsId": 115,
+        "name": "思密达韩式自助烤肉",
+        "type": "单人自助午餐",
+        "adress": "宝安区宝安大道新沙路276号（百佳华商场二楼）",
+        "price": "53.9",
+        "originalPrice":"58元",
+        "sold": "已售36024",
+        "imgUrl": "http://p0.meituan.net/deal/22f0d8e83b9d9375f3ab0c486d3de14354734.jpg"
+      }
+    ]
   },
   {
     "id": 116,
@@ -180,7 +343,19 @@
     "price": "18",
     "originalPrice":"24元",
     "sold": "已售11518",
-    "imgUrl":"http://p1.meituan.net/200.0/deal/08bbf8ba513e79063ac4251c7529b20b55199.jpg@157_0_486_486a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p1.meituan.net/200.0/deal/08bbf8ba513e79063ac4251c7529b20b55199.jpg@157_0_486_486a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 116,
+        "name": "真功夫",
+        "type": "冬菇鸡腿肉饭",
+        "adress": "宝安区福永街道办富桥工业二区蚝业路万家乐百货1楼（威尔斯酒店西）",
+        "price": "18",
+        "originalPrice":"24元",
+        "sold": "已售11518",
+        "imgUrl": "http://p0.meituan.net/deal/6904e728725bdef50b1ae6cb6b17015842581.jpg"
+      }
+    ]
   },
   {
     "id": 117,
@@ -189,7 +364,19 @@
     "price": "18.8",
     "originalPrice":"23元",
     "sold": "已售4264",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/6675ee8adeb7e29b713c0c2b3d49b44868593.jpg@0_137_688_688a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/6675ee8adeb7e29b713c0c2b3d49b44868593.jpg@0_137_688_688a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 117,
+        "name": "鹿角巷 THE ALLEY",
+        "type": "黑糖鹿丸鲜奶",
+        "adress": "宝安区西乡街道麻布社区轻铁花园820",
+        "price": "18.8",
+        "originalPrice":"23元",
+        "sold": "已售4264",
+        "imgUrl": "http://p0.meituan.net/deal/eccdfe1474292f33a6d83729c407bffe203880.png"
+      }
+    ]
   },
   {
     "id": 118,
@@ -198,7 +385,19 @@
     "price": "16.8",
     "originalPrice":"29元",
     "sold": "已售7978",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/8188a5cbcb561125d8ff908f8e2200e0214655.jpg@160_0_960_960a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/8188a5cbcb561125d8ff908f8e2200e0214655.jpg@160_0_960_960a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 118,
+        "name": "吉野家",
+        "type": "小菇酱肉饭套餐",
+        "adress": "宝安区流塘路泰华明珠A1一乐会音乐潮流广场1楼122号商铺",
+        "price": "16.8",
+        "originalPrice":"29元",
+        "sold": "已售7978",
+        "imgUrl": "http://p1.meituan.net/deal/08bbf8ba513e79063ac4251c7529b20b55199.jpg"
+      }
+    ]
   },
   {
     "id": 119,
@@ -207,15 +406,39 @@
     "price": "190",
     "originalPrice":"200元",
     "sold": "已售1510",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q",
+    "goods" :[
+      {
+        "goodsId": 119,
+        "name": "胖哥俩肉蟹煲",
+        "type": "200元通用代金券",
+        "adress": "宝安区益田假日天地2楼16号铺",
+        "price": "190",
+        "originalPrice":"200元",
+        "sold": "已售1510",
+        "imgUrl": "http://p0.meituan.net/deal/b6a27ba9925008540026c32463b31510198528.jpg"
+      }
+    ]
   },
   {
     "id": 120,
-    "name": "胖哥俩肉蟹煲",
-    "type": "[14店通用]200元14店通用代金券1张",
-    "price": "190",
-    "originalPrice":"200元",
-    "sold": "已售1510",
-    "imgUrl":"http://p0.meituan.net/200.0/deal/39d3a5c419bf23a060c79ce7b7e0a3c658268.jpeg@114_0_451_451a%7C267h_267w_2e_90Q"
+    "name": "卤鹅有约",
+    "type": "单人鹅肉套餐，提供免费WiFi",
+    "price": "23.8",
+    "originalPrice":"30元",
+    "sold": "已售5078",
+    "imgUrl":"http://p1.meituan.net/deal/ea8d473f34b9ce9ac7704d1d4167232168323.jpg",
+    "goods" :[
+      {
+        "goodsId": 120,
+        "name": "卤鹅有约",
+        "type": "单人鹅肉套餐",
+        "adress": "宝安区福海街道宝安大道6099号星港同创汇天枢座103单元",
+        "price": "23.8",
+        "originalPrice":"30元",
+        "sold": "已售5078",
+        "imgUrl": "http://p1.meituan.net/deal/ea8d473f34b9ce9ac7704d1d4167232168323.jpg"
+      }
+    ]
   }
 ]

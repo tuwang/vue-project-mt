@@ -1,6 +1,10 @@
 <template>
+  <transition 
+    enter-active-class="animated fadeInLeft">
+  
+    <router-view></router-view>
 
-  <router-view></router-view>
+  </transition>
   
 </template>
 

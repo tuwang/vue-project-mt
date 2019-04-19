@@ -39,9 +39,9 @@ export default {
     },
 
     changeList(state, list) {
-      console.log(list)
+      // console.log(list)
       state.list = state.list.concat(list)
-      console.log(state.list)
+      // console.log(state.list)
     }
   },
 

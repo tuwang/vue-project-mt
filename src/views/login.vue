@@ -65,10 +65,10 @@ export default {
       // 假设这块登录成功。我们需要做的事情是：跳转回去
       // 1. 不管如何都跳转首页
       // this.$router.push('/');
-      console.log(1)
+      // console.log(1)
       // 2. 用户本来是想要进入哪里，就让他回答哪里
       var redirect = this.$route.query.redirect || '/'
-      console.log(window.isLogin)
+      // console.log(window.isLogin)
       // console.log(redirect)
       this.$router.replace(redirect)
     },

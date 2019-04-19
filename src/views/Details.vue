@@ -8,7 +8,7 @@
         <img :src="item.imgUrl" alt="" class="toutu-img">
         <div class="desc">
           <h1 class="title">{{ item.name }}</h1>
-          <span>自助晚餐</span>
+          <span>{{ item.type }}</span>
         </div>
       </a>
       <div class="list-group">
@@ -34,7 +34,7 @@
             </li>
             <li class="agreement-solds">
               <span class="agreement-icon icon-solds icon-sp"></span>
-              <span>已售111111</span>
+              <span>{{ item.sold }}</span>
             </li>
           </ul>
         </div>
@@ -45,8 +45,8 @@
           <div class="card">
             <div class="biz-detail">
               <a href="" class="detail-info">
-                <h5 class="single-line">汉釜宫韩式自助烤肉火锅（宝能店）</h5>
-                <div class="address single-line">龙岗区龙岗建设路宝能城市广场1楼（中心城沃尔玛一楼L1-21铺）</div>
+                <h5 class="single-line">{{ item.name }}</h5>
+                <div class="address single-line">{{ item.adress }}</div>
                 <div class="dist">
                   <span class="icon-sp icon-location"></span>
                   <span class="dist-title">离我最近</span>
@@ -66,9 +66,9 @@
         <div class="menu">
           <div class="menu-table">
             <div class="menu-item menu-tr">
-                <span class="left">自助晚餐</span>
+                <span class="left">{{ item.type }}</span>
                 <span class="middle">1 位</span>
-                <span class="right">58元</span>
+                <span class="right">{{ item.price }}元</span>
             </div>
             <div class="menu-item menu-head">备注</div>
           </div>
@@ -129,7 +129,7 @@ export default {
       }).then(res => {
         let data = res.data;
         this.info = data.find(item => {
-          console.log(item.goods)
+          // console.log(item.goods)
           // console.log(this.$route)
           return item.id === parseInt(this.$route.params.id)
         })
