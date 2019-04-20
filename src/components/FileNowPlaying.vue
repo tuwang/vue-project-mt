@@ -107,11 +107,11 @@ export default {
 .film-list-content {
   background: #fff;
   ul {
-    margin-left: 30px;
+    margin-left: 15px;
 
     li {
-      padding: 30px 30px 30px 0;
-      height: 188px;
+      padding: 15px 15px 15px 0;
+      height: 94px;
       position: relative;
       box-sizing: content-box;
 
@@ -122,18 +122,18 @@ export default {
 
       .img {
         flex-shrink: 0;
-        width: 132px;
-        height: 188px;
+        width: 66px;
+        height: 94px;
         background: rgb(249, 249, 249);
         img {
           width: 100%;
-          border-radius: 4px;
+          border-radius: 2px;
         }
       }
 
       .info {
         flex: 1;
-        padding: 0 20px;
+        padding: 0 10px;
         overflow: hidden;
 
         .info-col {
@@ -145,51 +145,51 @@ export default {
 
         .film-name {
           .name {
-            max-width: calc(100% - 50px);
+            max-width: calc(100% - 25px);
             color: #191a1b;
-            font-size: 32px;
-            height: 44px;
-            line-height: 44px;
-            margin-right: 10px;
+            font-size: 16px;
+            height: 22px;
+            line-height: 22px;
+            margin-right: 5px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
           }
           .item {
-            font-size: 18px;
+            font-size: 9px;
             color: #fff;
             background-color: #d2d6dc;
-            height: 28px;
-            line-height: 28px;
-            padding: 0 4px;
-            border-radius: 4px;
+            height: 14px;
+            line-height: 14px;
+            padding: 0 2px;
+            border-radius: 2px;
           }
         }
 
         .film-grade {
           .label {
-            font-size: 26px;
-            margin-top: 8px;
+            font-size: 13px;
+            margin-top: 4px;
             color: #797d82;
           }
           .grade {
             color: #ffb232;
-            font-size: 28px;
+            font-size: 14px;
           }
         }
 
         .film-actors {
           .label {
-            font-size: 26px;
-            margin-top: 8px;
+            font-size: 13px;
+            margin-top: 4px;
             color: #797d82;
           }
         }
 
         .film-detail {
           .label {
-            font-size: 26px;
-            margin-top: 8px;
+            font-size: 13px;
+            margin-top: 4px;
             color: #797d82;
           }
         }
@@ -198,20 +198,20 @@ export default {
       .buy {
         .border-1;
         flex-shrink: 0;
-        line-height: 50px;
-        height: 50px;
-        width: 100px;
+        line-height: 25px;
+        height: 25px;
+        width: 50px;
         color: #ff5f16;
-        font-size: 26px;
+        font-size: 13px;
         text-align: center;
-        border-radius: 4px;
+        border-radius: 2px;
         position: relative;
       }
     }
   }
   .load-more{
-    height: 72px;
-    line-height: 72px;
+    height: 26px;
+    line-height: 36px;
     text-align: center;
   }
 }

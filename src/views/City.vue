@@ -155,17 +155,17 @@ html {
   background-color: #f0efed;
 }
 .wrapper {
-  padding: 0px 20px;
+  padding: 0px 10px;
 
   .city-box {
-    height: 86px;
+    height: 43px;
     background: #fff;
-    margin: 20px 0px 20px;
-    padding: 20px 20px;
-    font-size: 28px;
+    margin: 10px 0px 10px;
+    padding: 10px 10px;
+    font-size: 14px;
     color: #333333;
     border: 1px solid #ddd8ce;
-    border-radius: 6px;
+    border-radius: 3px;
     overflow: hidden;
     background-color: #fdfdfc;
 
@@ -175,96 +175,96 @@ html {
   }
 
   .recent {
-    height: 135px;
+    height: 67.5px;
 
     h4 {
-      font-size: 30px;
+      font-size: 15px;
       color: #333333;
       font-weight: 500;
-      margin-top: 14px;
-      margin-bottom: 14px;
+      margin-top: 7px;
+      margin-bottom: 7px;
     }
 
     .recent-city {
-      height: 80px;
+      height: 40px;
       background-color: #fdfdfc;
       // border: 1px solid #DDD8CE;
-      border-radius: 6px;
+      border-radius: 3px;
       overflow: hidden;
 
       li {
         float: left;
         width: 20%;
-        height: 80px;
-        line-height: 80px;
+        height: 40px;
+        line-height: 40px;
         text-align: center;
         border: 1px solid #ddd8ce;
 
         a {
           display: block;
           color: #333333;
-          font-size: 28px;
+          font-size: 14px;
         }
       }
     }
   }
   h4 {
-    font-size: 30px;
+    font-size: 15px;
     color: #333333;
     font-weight: 500;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 
   .hot-city {
     height: 100%;
     background-color: #fdfdfc;
-    border-radius: 6px;
+    border-radius: 3px;
     overflow: hidden;
 
     li {
       float: left;
       width: 25%;
-      height: 80px;
-      line-height: 80px;
+      height: 40px;
+      line-height: 40px;
       text-align: center;
       border: 1px solid #ddd8ce;
 
       a {
         display: block;
         color: #333333;
-        font-size: 28px;
+        font-size: 14px;
       }
     }
   }
   h5 {
     float: left;
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 40px;
+    line-height: 40px;
     color: #333333;
-    font-size: 30px;
+    font-size: 15px;
     background-color: #f0efed;
   }
   .all-city {
-    margin-top: 10px;
+    margin-top: 5px;
     background-color: #fdfdfc;
 
     .charlist {
-      min-height: 425px;
+      min-height: 212.5px;
 
       .react {
         float: left;
         width: 20%;
-        height: 80px;
-        line-height: 80px;
+        height: 40px;
+        line-height: 40px;
         text-align: center;
         // border:1px solid #ddd8ce;
 
         a {
           display: block;
           color: #06c1ae;
-          font-size: 28px;
+          font-size: 14px;
         }
       }
     }
@@ -281,16 +281,16 @@ html {
 
         li {
           float: left;
-          width: 700px;
-          height: 80px;
-          line-height: 80px;
-          font-size: 28px;
-          padding: 0px 30px;
+          width: 350px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+          padding: 0px 15px;
 
           a {
             display: block;
             color: #333333;
-            font-size: 28px;
+            font-size: 14px;
           }
         }
       }

@@ -72,23 +72,23 @@ export default {
 @import '../styles/common/mixins.less';
 
 .film-list {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   .city-fixed {
     position: absolute;
-    top: 36px;
-    left: 14px;
+    top: 18px;
+    left: 7px;
     color: #fff;
     z-index: 10;
-    font-size: 26px;
+    font-size: 13px;
     background: rgba(0,0,0,.2);
-    height: 60px;
-    line-height: 60px;
-    border-radius: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
     text-align: center;
-    padding: 0 10px;
+    padding: 0 5px;
 
     i {
-      font-size: 20px;
+      font-size: 10px;
     }
   }
 }
@@ -109,7 +109,7 @@ export default {
 
   .tabs-bar {
     .border-1-bottom;
-    height: 98px;
+    height: 49px;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -129,9 +129,9 @@ export default {
         flex-shrink: 0;
         color: #191a1b;
         text-align: center;
-        height: 32px;
-        line-height: 32px;
-        font-size: 28px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 14px;
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
 
@@ -143,14 +143,14 @@ export default {
       .tab-ink-bar-wrapper {
         position: absolute;
         margin: auto;
-        top: 60px;
+        top: 30px;
         left: 0;
         transform: translateZ(0);
         transition: transform .2s cubic-bezier(.35,0,.25,1);
 
         .tab-ink-bar {
-          border-bottom: 4px solid #ff5f16;
-          border-radius: 40px;
+          border-bottom: 2px solid #ff5f16;
+          border-radius: 20px;
           display: block;
           margin: auto;
         }

@@ -95,29 +95,29 @@ export default {
   float:none !important;
 }
 #search-wrap{
-  min-height: 500px;
+  min-height: 250px;
 
   #search-form{
     position: relative;
-    height: 80px;
-    margin: 20px 0;
-    padding: 0 20px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
     
     .box-search{
       position: relative;
-      height: 80px;
+      height: 40px;
       vertical-align: middle;
-      margin-right: 140px;
-      border-radius: 6px;
+      margin-right: 70px;
+      border-radius: 3px;
       border: 1px solid #ccc;
       background-color: #fff;
-      line-height: 80px;
-      padding: 0 70px 0;
+      line-height: 40px;
+      padding: 0 35px 0;
 
       .icon-sousuo{
         position: absolute;
-        left: 20px;
-        font-size: 40px;
+        left: 10px;
+        font-size: 20px;
         color: #999;
       }
 
@@ -128,23 +128,23 @@ export default {
         border: none;
         outline-style: none;
         background-color: rgba(255,255,255,0);
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 14px;
+        line-height: 214px;
 
       }
     }
 
     button{
       position: absolute;
-      width: 120px;
+      width: 60px;
       height: 100%;
-      right: 20px;
+      right: 10px;
       top: 0;
       background-color: #dcdcdc;
       color: #999;
       border: none;
-      font-size: 28px;
-      border-radius: 6px;
+      font-size: 14px;
+      border-radius: 3px;
     }
   }
 
@@ -155,22 +155,22 @@ export default {
       background-color: #fff;
 
       .icon-wrap{
-        height: 360px;
+        height: 180px;
 
         .icon-list{
           height: auto;
-          padding-bottom: 40px;
-          font-size: 28px;
+          padding-bottom: 20px;
+          font-size: 14px;
 
           .icon{
             display: inline-block;
             width: 25%;
-            height: 80px;
+            height: 40px;
             float: left;
             box-sizing: border-box;
             text-align: center;
-            line-height: 80px;
-            font-size: 28px;
+            line-height: 40px;
+            font-size: 14px;
             border-bottom: 1px solid #ddd8ce;
             margin-bottom: -1px;
             background-color: #fff;
@@ -181,7 +181,7 @@ export default {
               display: block;
               position: relative;
               height: 100%;
-              padding: 20px 0;
+              padding: 10px 0;
               overflow: hidden;
               color: #000;
             }

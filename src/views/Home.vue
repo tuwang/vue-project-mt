@@ -185,86 +185,86 @@ export default {
 @import "../styles/common/mixins.less";
 .header {
   width: 100%;
-  height: 101px;
+  height: 50.5px;
   background: #06c1ae;
   border-bottom: 1px solid #21897d;
   .address {
-    width: 135px;
-    height: 101px;
-    line-height: 101px;
+    width: 67.5px;
+    height: 50.5px;
+    line-height: 50.5px;
     text-align: center;
     float: left;
     a {
-      font-size: 32px;
+      font-size: 16px;
       color: #fff;
     }
     i {
-      font-size: 26px;
+      font-size: 13px;
     }
   }
   .search {
-    width: 500px;
-    height: 64px;
+    width: 250px;
+    height: 32px;
     float: left;
-    line-height: 64px;
-    border-radius: 4px;
-    font-size: 24px;
-    margin-top: 20px;
-    padding-left: 17px;
+    line-height: 32px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 8.5px;
     color: #eee;
     background: rgba(0, 0, 0, 0.15);
     i {
-      font-size: 28px;
+      font-size: 14px;
       color: #fff;
     }
   }
   .my {
-    width: 98px;
-    height: 101px;
+    width: 49px;
+    height: 50.5px;
     float: right;
-    line-height: 101px;
+    line-height: 50.5px;
     a {
       width: 100%;
-      height: 81px;
+      height: 10.5px;
       display: block;
       text-align: center;
-      height: 81px;
+      height: 40.5px;
       color: #fff;
       i {
-        font-size: 50px;
+        font-size: 25px;
         display: block;
         color: #fff;
       }
       span {
         display: block;
-        height: 30px;
-        line-height: 30px;
+        height: 15px;
+        line-height: 15px;
       }
     }
   }
 }
 .nav {
   width: 100%;
-  height: 361px;
+  height: 180.5px;
   background: #fff;
   ul {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 10px;
     li {
       flex: 1 0 20%;
-      height: 162px;
+      height: 81px;
       a {
         display: flex;
-        height: 162px;
+        height: 81px;
         flex-direction: column;
         align-items: center;
         i {
-          font-size: 80px;
+          font-size: 40px;
         }
         span {
           color: #666;
-          font-size: 24px;
+          font-size: 12px;
         }
       }
     }
@@ -273,16 +273,16 @@ export default {
 .list {
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   background: #fff;
 
   dl {
-    padding-left: 20px;
+    padding-left: 10px;
 
     dt {
-      font-size: 34px;
-      padding-top: 30px;
-      padding-bottom: 20px;
+      font-size: 17px;
+      padding-top: 15px;
+      padding-bottom: 10px;
       color: #333;
       border-bottom: 1px solid #ddd8ce;
     }
@@ -292,7 +292,7 @@ export default {
 
       a {
         display: block;
-        padding: 20px;
+        padding: 10px;
         padding-left: 0;
         height: 100%;
 
@@ -301,44 +301,44 @@ export default {
 
           .deal_left {
             position: absolute;
-            width: 180px;
-            height: 164px;
+            width: 90px;
+            height: 82px;
             img {
-              width: 180px;
-              height: 164px;
+              width: 90px;
+              height: 82px;
             }
           }
           .deal_rigth {
             position: relative;
-            height: 164px;
+            height: 82px;
             color: #333;
-            margin-left: 200px;
+            margin-left: 100px;
             .name {
-              line-height: 30px;
-              padding-top: 5px;
-              font-size: 30px;
-              margin-bottom: 12px;
+              line-height: 15px;
+              padding-top: 2.5px;
+              font-size: 15px;
+              margin-bottom: 6px;
             }
             .describe {
-              height: 34px;
-              font-size: 24px;
+              height: 17px;
+              font-size: 12px;
             }
             .price {
-              margin-top: 52px;
-              line-height: 19px;
+              margin-top: 26px;
+              line-height: 9.5px;
               .p_left {
                 float: left;
                 :first-child {
                   color: #06c1ae;
-                  font-size: 38px;
-                  margin-right: 10px;
+                  font-size: 19px;
+                  margin-right: 5px;
                 }
                 :last-child {
-                  font-size: 24px;
+                  font-size: 12px;
                 }
               }
               .p_right {
-                font-size: 24px;
+                font-size: 12px;
                 float: right;
               }
             }
@@ -348,16 +348,16 @@ export default {
     }
     .dd {
       position: relative;
-      font-size: 30px;
+      font-size: 15px;
       a {
-        line-height: 40px;
+        line-height: 20px;
         color: #06c1ae;
         div {
           position: absolute;
         }
         i {
-          margin-left: 690px;
-          font-size: 30px;
+          margin-left: 345px;
+          font-size: 15px;
         }
       }
     }

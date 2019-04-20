@@ -156,7 +156,7 @@ export default {
     display: block;
     position: relative;
     overflow: hidden;
-    height: 390px;
+    height: 195px;
 
     .toutu-img{
       position: absolute;
@@ -169,16 +169,16 @@ export default {
 
     .desc{
       position: absolute;
-      left: 30px;
-      right: 30px;
-      bottom: 24px;
+      left: 15px;
+      right: 15px;
+      bottom: 14px;
       z-index: 1;
       text-shadow: 1px 1px 1px #000;
       color: #fff;
 
       .title{
-        margin-bottom: 14px;
-        font-size: 38px;
+        margin-bottom: 7px;
+        font-size: 19px;
         line-height: 1.1;
       }
     }
@@ -205,8 +205,8 @@ export default {
           vertical-align: text-top;
 
           strong{
-            font-size: 66px;
-            margin-right: 6px;
+            font-size: 33px;
+            margin-right: 3px;
             font-weight: bolder;
           }
 
@@ -218,15 +218,15 @@ export default {
         .btn{
           display: inline-block;
           position: absolute;
-          height: 80px;
-          width: 260px;
-          right: 20px;
-          top: 21px;
+          height: 40px;
+          width: 130px;
+          right: 10px;
+          top: 10.5px;
           text-align: center;
-          line-height: 80px;
-          font-size: 40px;
+          line-height: 40px;
+          font-size: 20px;
           background: #f90;
-          border-radius: 6px;
+          border-radius: 3px;
           color: #fff;
         }
       }
@@ -240,12 +240,12 @@ export default {
 
         li{
           display: inline-block;
-          height: 56px;
+          height: 28px;
           width: 49%;
           // float: left;
           padding: 0;
           box-sizing: border-box;
-          line-height: 56px;
+          line-height: 28px;
           text-align: left;
           white-space: nowrap;
           text-overflow: ellipsis;
@@ -254,33 +254,33 @@ export default {
             display: inline-block;
             vertical-align: middle;
             transform: scale(1.42,1.42);
-            margin-left: 10px;
-            margin-right: 16px;
+            margin-left: 5px;
+            margin-right: 8px;
           }
 
           .icon-tk{
             background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-            background-position: -34px -126px;
-            width: 28px;
-            height: 28px;
+            background-position: -17px -63px;
+            width: 14px;
+            height: 14px;
           }
 
           .icon-gq{
             background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-            background-position: -66px -126px;
-            width: 28px;
-            height: 28px;
+            background-position: -33px -63px;
+            width: 14px;
+            height: 14px;
           }
         }
 
         .agreement-solds{
-          margin-bottom: 10px;
+          margin-bottom: 5px;
 
           .icon-solds{
             background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-            background-position: -98px -126px;
-            width: 28px;
-            height: 28px;
+            background-position: -49px -63px;
+            width: 14px;
+            height: 14px;
           }
         }
       }
@@ -289,7 +289,7 @@ export default {
 
   .poi-container{
     border-top: 1px solid #ddd8ce;
-    margin-top: 20px;
+    margin-top: 10px;
 
     .group-item{
       .card{
@@ -304,8 +304,8 @@ export default {
 
             h5{
               margin-top: 0;
-              margin-bottom: 6px;
-              font-size: 32px;
+              margin-bottom: 3px;
+              font-size: 16px;
               color: #000;
             }
             .single-line{
@@ -315,24 +315,24 @@ export default {
             }
 
             .address{
-              padding-right: 20px;
+              padding-right: 10px;
               color: #666;
             }
 
             .dist{
-              margin-top: 14px;
+              margin-top: 7px;
               line-height: 1.1;
               color: #666;
 
               .icon-location{
                 background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-                background-position: -130px -126px;
-                width: 28px;
-                height: 28px;
+                background-position: -65px -63px;
+                width: 14px;
+                height: 14px;
               }
 
               .dist-title{
-                margin-left: 30px;
+                margin-left: 15px;
                 color: #eb8706;
               }
             }
@@ -340,12 +340,12 @@ export default {
         }
 
         .biz-call{
-          width: 140px;
+          width: 70px;
           text-align: center;
           border-left: 1px solid #ddd8ce;
-          font-size: 50px;
-          height: 120px;
-          line-height: 120px;
+          font-size: 25px;
+          height: 60px;
+          line-height: 60px;
           color: #06c1ae;
 
           .phone{
@@ -354,9 +354,9 @@ export default {
 
             .icon-tel{
               background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-              background-position: -88px -44px;
-              width: 38px;
-              height: 38px;
+              background-position: -44px -22px;
+              width: 19px;
+              height: 19px;
             }
           }
         }
@@ -366,9 +366,9 @@ export default {
 
   .menu-container{
     border-top: 1px solid #ddd8ce;
-    margin-top: 20px;
+    margin-top: 10px;
     background: #fff;
-    font-size: 30px;
+    font-size: 15px;
 
     .menu{
       .menu-table{
@@ -380,37 +380,37 @@ export default {
 
         .menu-tr{
           display: -webkit-box;
-          font-size: 30px;
-          padding-left: 20px;
+          font-size: 15px;
+          padding-left: 10px;
 
           .left{
             -webkit-box-flex: 1;
             display: block;
-            padding: 22px 0;
-            padding-right: 20px;
+            padding: 11px 0;
+            padding-right: 10px;
           }
 
           .middle{
             display: -webkit-box;
             -webkit-box-align: center;
-            width: 170px;
-            padding: 22px 20px;
+            width: 85px;
+            padding: 11px 10px;
             border-left: 1px solid #ccc;
           }
 
           .right{
             display: -webkit-box;
             -webkit-box-align: center;
-            width: 120px;
-            padding: 22px 20px;
+            width: 60px;
+            padding: 11px 10px;
             border-left: 1px solid #ccc;
           }
         }
 
         .menu-head{
           background: #f8f9fa;
-          padding: 10px;
-          font-size: 30px;
+          padding: 5px;
+          font-size: 15px;
           color: #000;
           text-align: center;
         }
@@ -418,14 +418,14 @@ export default {
 
       .menu-explanation{
         position: relative;
-        padding: 28px 20px;
+        padding: 14px 10px;
         border-bottom: 1px solid #ddd8ce;
         overflow: hidden;
         font-weight: 400;
 
         ul{
           list-style-type: disc;
-          padding-left: 40px;
+          padding-left: 20px;
 
           .menu-li{
             list-style-type: disc;
@@ -437,26 +437,26 @@ export default {
 
   .notice-container{
     border-top: 1px solid #ddd8ce;
-    margin-top: 20px;
+    margin-top: 10px;
     background: #fff; 
 
     .notice-item{
-      margin-bottom: 26px;
+      margin-bottom: 13px;
 
       .notice-item-title{
-        font-size: 30px;
+        font-size: 15px;
         color: #f90;
       }
 
       .notice-item-des{
-        padding-top: 20px;
-        padding-left: 16px;
-        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 8px;
+        font-size: 15px;
         color: #333;
 
         .much-content{
           list-style-type: disc;
-          margin-left: 40px;
+          margin-left: 10px;
         }
       }
     }

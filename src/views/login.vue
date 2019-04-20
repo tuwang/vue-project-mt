@@ -103,60 +103,60 @@ html {
     margin-top: 0;
 
     .nav {
-      height: 84px;
+      height: 42px;
 
       ul {
         position: relative;
-        height: 84px;
-        border-bottom: 8px solid #DDD8CE;
+        height: 42px;
+        border-bottom: 4px solid #DDD8CE;
 
         li {
           display: block;
           float: left;
           width: 50%;
-          height: 76px;
-          padding: 0px 20px;
+          height: 38px;
+          padding: 0px 10px;
           background-color: #fff;
 
           a {
             display: block;
-            height: 76px;
-            line-height: 76px;
+            height: 38px;
+            line-height: 38px;
             text-align: center;
             color: #333333;
-            font-size: 28px;
+            font-size: 14px;
             font-weight: 400;
           }
         }
 
         .slide {
             position: absolute;
-            width: 355px;
-            bottom: -8px;
-            border-bottom: 8px solid #06c1ae;
+            width: 177.5px;
+            bottom: -4px;
+            border-bottom: 4px solid #06c1ae;
         }
 
         .left{
-            left:20px;
+            left:10px;
         }
 
         .right{
-            left: 375px;
+            left: 177.5px;
         }
       }
     }
   }
 
   #login-from {
-    height: 290px;
+    height: 145px;
 
     #username {
       display: block;
       width: 100%;
       padding-left: 0;
-      padding: 28px 20px;
+      padding: 14px 10px;
       border-bottom: 1px solid #ddd8ce;
-      font-size: 28px;
+      font-size: 14px;
       color: #333333;
       border-top: 0;
       border-left: 0;
@@ -166,22 +166,22 @@ html {
       display: block;
       width: 100%;
       padding-left: 0;
-      padding: 28px 20px;
+      padding: 14px 10px;
       border-bottom: 1px solid #ddd8ce;
-      font-size: 28px;
+      font-size: 14px;
       color: #333333;
       border: 0;
     }
     #btn {
       display: block;
-      width: 710px;
-      height: 94px;
-      line-height: 94px;
-      font-size: 40px;
+      width: 355px;
+      height: 47px;
+      line-height: 47px;
+      font-size: 20px;
       text-align: center;
-      padding: 0px 32px;
-      margin: 20px 20px;
-      border-radius: 6px;
+      padding: 0px 16px;
+      margin: 10px 10px;
+      border-radius: 3px;
       color: #fff;
       border: 0;
       background-color: #06c1ae;
@@ -190,12 +190,12 @@ html {
 
   #phone-login {
     // margin-top: 30px;
-    height: 296px;
+    height: 148px;
 
     dl {
       border-bottom: 1px solid #ddd8ce;
       background-color: #fff;
-      height: 174px;
+      height: 87px;
 
       .get-PhoneCode {
         position: relative;
@@ -203,10 +203,10 @@ html {
         border-bottom: 1px solid #ddd8ce;
 
         #phone {
-          width: 600px;
+          width: 300px;
           padding-left: 0;
-          padding: 28px 20px;
-          font-size: 28px;
+          padding: 14px 10px;
+          font-size: 14px;
           color: #333333;
           border-top: 0;
           border-left: 0;
@@ -214,65 +214,65 @@ html {
         }
         .getCode {
           position: absolute;
-          right: 30px;
-          top: 20px;
+          right: 15px;
+          top: 10px;
           background-color: #dcdcdc;
           color: #999;
           border: 0;
-          padding: 0 20px;
+          padding: 0 10px;
           text-align: center;
-          height: 60px;
-          border-radius: 6px;
-          font-size: 28px;
-          line-height: 60px;
+          height: 30px;
+          border-radius: 3px;
+          font-size: 14px;
+          line-height: 30px;
           box-sizing: border-box;
         }
       }
 
       .noteCode {
         width: 100%;
-        height: 100px;
+        height: 50px;
         background-color: #fff;
         border: 0;
 
         #note {
-          width: 690px;
-          margin-top: 20px;
-          margin-left: 15px;
+          width: 345px;
+          margin-top: 10px;
+          margin-left: 7.5px;
           border: 0;
-          height: 60px;
-          text-indent: 10px;
-          line-height: 60px;
-          border-radius: 6px;
-          font-size: 28px;
+          height: 30px;
+          text-indent: 5px;
+          line-height: 30px;
+          border-radius: 3px;
+          font-size: 14px;
           background-color: rgb(235, 235, 228);
         }
       }
     }
     .btn-phone {
       display: block;
-      width: 710px;
-      height: 94px;
-      line-height: 94px;
-      font-size: 40px;
+      width: 155px;
+      height: 47px;
+      line-height: 47px;
+      font-size: 20px;
       text-align: center;
-      padding: 0px 32px;
-      margin: 30px 20px;
-      border-radius: 6px;
+      padding: 0px 16px;
+      margin: 15px 10px;
+      border-radius: 3px;
       border: 0;
       background-color: #dcdcdc;
       color: #999;
     }
   }
   .subline {
-    margin: 28px 20px;
+    margin: 14px 10px;
 
     .zc-left {
       float: left;
 
       a {
         color: #06c1ae;
-        font-size: 28px;
+        font-size: 14px;
       }
     }
 
@@ -281,7 +281,7 @@ html {
 
       a {
         color: #06c1ae;
-        font-size: 28px;
+        font-size: 14px;
       }
     }
   }

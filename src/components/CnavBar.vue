@@ -46,18 +46,18 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 98px;
-    line-height: 56px;
+    height: 49px;
+    line-height: 28px;
     position: relative;
     color: #797d82;
 
     .iconfont {
-      font-size: 44px;
+      font-size: 22px;
     }
 
     span {
-      font-size: 20px;
-      line-height: 24px;
+      font-size: 10px;
+      line-height: 12px;
       word-break: keep-all;
     }
 

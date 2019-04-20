@@ -35,39 +35,39 @@ export default {
 .navbar{
   display: -webkit-box;
   position: relative;
-  height: 102px;
+  height: 51px;
   color: #fff;
   background-color: #06c1ae;
   border-bottom: 1px solid #21897d;
 
   .nav-wrap-left{
-    height: 101px;
-    line-height: 101px;
+    height: 50.5px;
+    line-height: 50.5px;
 
     .back{
       display: block;
-      height: 100px;
-      width: 45px;
-      line-height: 100px;
-      padding: 0 30px;
+      height: 50px;
+      width: 22.5px;
+      line-height: 50px;
+      padding: 0 15px;
 
       .text-icon{
         display: inline-block;
         position: relative;
-        height: 45px;
-        width: 45px;
+        height: 22.5px;
+        width: 22.5px;
         vertical-align: middle;
 
         &::before{
           content: '';
           display: block;
           position: absolute;
-          left: 7px;
+          left: 3.5px;
           top: 0;
-          width: 40px;
-          height: 40px;
-          border-bottom: 4px solid #fff;
-          border-left: 4px solid #fff;
+          width: 20px;
+          height: 20px;
+          border-bottom: 2px solid #fff;
+          border-left: 2px solid #fff;
           transform: scaleY(0.8) rotateZ(45deg);
         }
 
@@ -75,10 +75,10 @@ export default {
           content: '';
           display: block;
           position: absolute;
-          top: 20px;
-          left: 3px;
+          top: 10px;
+          left: 1.5px;
           height: 0;
-          width: 45px;
+          width: 22.5px;
         }
       }
     }
@@ -87,10 +87,10 @@ export default {
   .nav-header{
     display: block;
     -webkit-box-flex: 1;
-    font-size: 36px;
+    font-size: 18px;
     font-weight: 400;
     text-align: center;
-    line-height: 100px;
+    line-height: 50px;
   }
 
   .nav-wrap-right{
@@ -99,30 +99,30 @@ export default {
     a{
       display: inline-block;
       height: 100%;
-      width: 94px;
-      line-height: 100px;
+      width: 47px;
+      line-height: 50px;
       text-align: center;
 
       .nav-btn{
         display: inline-block;
-        font-size: 20px;
-        line-height: 1;
+        font-size: 10px;
+        line-height: 51px;
         vertical-align: middle;
         text-align: center;
         color: #fff;
 
         .icon-collect{
           background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-          background-position: -88px 0;
-          width: 40px;
-          height: 40px;
+          background-position: -44px 0;
+          width: 20px;
+          height: 20px;
         }
 
         .icon-menu{
           background-image: url('http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@5b99d5a');
-          background-position: -44px -44px;
-          width: 40px;
-          height: 40px;
+          background-position: -22px -22px;
+          width: 20px;
+          height: 20px;
         }
       }
     }

@@ -109,66 +109,66 @@ export default {
 .content-wrap{
 
   .content-title{
-    margin: 60px 20px 20px;
-    font-size: 34px;
+    margin: 30px 10px 10px;
+    font-size: 17px;
     font-weight: 400;
   }
 
   .deal-content-wrap{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-top: 1px solid #ddd8ce;
     border-bottom: 1px solid #ddd8ce;
     background: #fff;
 
     .content-info-line{
       position: relative;
-      padding: 0 20px;
-      height: 90px;
-      line-height: 90px;
+      padding: 0 10px;
+      height: 45px;
+      line-height: 45px;
       text-align: left;
-      font-size: 30px;
+      font-size: 15px;
 
       span{
         position: absolute;
         top: 0;
-        right: 20px;
+        right: 10px;
       }
 
       .operate{
         position: absolute;
-        top: -2px;
-        right: 20px;
+        top: -1px;
+        right: 10px;
         text-align: right;
 
         .btn{
-          width: 60px;
-          height: 60px;
+          width: 30px;
+          height: 30px;
           padding: 0;
           outline: 0;
-          font-size: 50px;
-          line-height: 55px;
-          border-radius: 6px;
-          transform: translateY(11px);
+          font-size: 25px;
+          line-height: 27.5px;
+          border-radius: 3px;
+          transform: translateY(5.5px);
         }
 
         .minus{
-          margin-right: 10px;
+          margin-right: 5px;
         }
 
         .number{
-          width: 120px;
-          height: 60px;
+          width: 60px;
+          height: 30px;
           vertical-align: middle;
-          border: 2px solid #ddd8ce;
-          border-radius: 6px;
+          border: 1px solid #ddd8ce;
+          border-radius: 3px;
           box-sizing: border-box;
-          line-height: 60px;
+          line-height: 30px;
           text-align: center;
           font: inherit;
         }
 
         .add{
-          margin-left: 10px;
+          margin-left: 5px;
         }
 
       }
@@ -185,21 +185,20 @@ export default {
   }
 
   .btn-wrap{
-    margin: 0 20px;
+    margin: 0 10px;
 
     .btn-sub{
       display: block;
       width: 100%;
-      height: 94px;
-      line-height: 94px;
-      font-size: 40px;
+      height: 47px;
+      line-height: 47px;
+      font-size: 20px;
       background-color: #f90;
       color: #fff;
       text-align: center;
       border: 0;
-      border-radius: 6px;
+      border-radius: 3px;
     }
   } 
 }
 </style>
-

@@ -38,28 +38,28 @@
 
 <style lang="less">
 .footer {
-  margin-top: 15px;
-  padding: 0 10px 20px;
+  margin-top: 8px;
+  padding: 0 5px 10px;
   .btn {
     display: inline-block;
-    line-height: 60px;
-    font-size: 28px;
+    line-height: 30px;
+    font-size: 14px;
     border: 1px solid #06c1ae;
-    border-radius: 6px;
-    padding: 0 32px;
+    border-radius: 3px;
+    padding: 0 16px;
     color: #06c1ae;
     text-align: center;
   }
   .weak_btn {
-    padding: 0 44px;
-    margin-left: 20px;
+    padding: 0 22px;
+    margin-left: 10px;
   }
   .footer_bar {
-    height: 60px;
-    font-size: 28px;
-    margin-bottom: 40px;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
     :first-child {
-      margin-right: 20px;
+      margin-right: 10px;
     }
     .pull_right {
       float: right;
@@ -67,20 +67,20 @@
   }
   .footer_nav {
     text-align: center;
-    height: 60px;
-    line-height: 60px;
-    margin-bottom: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
     a {
-      padding: 0 30px;
+      padding: 0 15px;
       color: #06c1ae;
     }
   }
   .footer_link {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     a {
-      padding: 0 20px;
-      line-height: 20px;
+      padding: 0 10px;
+      line-height: 10px;
       color: #06c1ae;
     }
   }

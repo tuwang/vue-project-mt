@@ -117,7 +117,7 @@ export default {
   display: block;
   position: relative;
   width: 100%;
-  height: 161px;
+  height: 80.5px;
   background-color: #e1dace;
   color: #333;
 
@@ -130,25 +130,25 @@ export default {
 
   .second-img{
     position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 20px;
-    left: 40px;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 20px;
   }
 
   .user-info{
     z-index: 1;
     position: relative;
     height: 100%;
-    padding: 28px 20px;
-    margin-right: 20px;
-    padding-left: 200px;
-    font-size: 24px;
+    padding: 14px 10px;
+    margin-right: 10px;
+    padding-left: 100px;
+    font-size: 12px;
     color: #666;
 
     p{
       text-align: justify;
-      margin: -8px 0;
+      margin: -4px 0;
       word-break: break-all;
 
       strong{
@@ -158,18 +158,18 @@ export default {
     }
 
     .uname{
-      font-size: 30px;
+      font-size: 15px;
       color: #333;
-      margin-top: 10px;
-      margin-bottom: 25px;
+      margin-top: 5px;
+      margin-bottom: 12.5px;
     }
 
     i{
       position: absolute;
       top: 50%;
-      right: 5px;
-      font-size: 30px;
-      transform: translateY(-24px);
+      right: 2.5px;
+      font-size: 15px;
+      transform: translateY(-12px);
     }
   }
 }
@@ -177,7 +177,7 @@ export default {
 .list{
   border-top: 1px solid #DDD8CE;
   border-bottom: 1px solid #DDD8CE;
-  margin-top: 20px;
+  margin-top: 10px;
   background: #fff;
 
   dd{
@@ -187,27 +187,27 @@ export default {
     .list-click{
       display: block;
       color: inherit;
-      padding: 28px 20px;
+      padding: 14px 10px;
       height: 100%;
       white-space: nowrap;
 
       div{
         position: relative;
         box-sizing: border-box;
-        font-size: 28px;
+        font-size: 14px;
 
         .order-icon{
           display: inline-block;
-          width: 50px;
-          height: 50px;
+          width: 25px;
+          height: 25px;
           text-align: center;
-          line-height: 50px;
-          border-radius: 6px;
+          line-height: 25px;
+          border-radius: 3px;
           color: #fff;
-          margin-right: 25px;
-          margin-top: -6px;
-          margin-bottom: -6px;
-          font-size: 30px;
+          margin-right: 12.5px;
+          margin-top: -3px;
+          margin-bottom: -3px;
+          font-size: 15px;
         }
 
         .icon-daipingjia1{
@@ -234,8 +234,8 @@ export default {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          right: 5px;
-          font-size: 28px;
+          right: 2.5px;
+          font-size: 14px;
         }
       }
     }
@@ -251,18 +251,18 @@ export default {
       a{
         display: block;
         height: 100%;
-        padding: 28px 0;
+        padding: 14px 0;
         color: #000;
         
         .text-icon{
           display: block;
-          font-size: 60px;
-          margin-top: -10px;
+          font-size: 30px;
+          margin-top: -5px;
         }
 
         span{
           display: block;
-          margin-top: -10px;
+          margin-top: -5px;
         }
       }
     }
